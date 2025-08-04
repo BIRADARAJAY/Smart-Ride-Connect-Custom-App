@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>primary</color>
+        <css>h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {&#13;
+    font-family: inherit;&#13;
+    font-weight: 500;&#13;
+    line-height: 1.1;&#13;
+    color: #f8fcff;&#13;
+}&#13;
+.text-muted {&#13;
+    color: #f8fcff;&#13;
+}</css>
+        <glyph>taxi</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item display_value="Create Ride Schedule">4f6e7813c30722505c5cb71ed4013113</sc_cat_item>
+        <sc_category/>
+        <short_description>You can register your ride here.</short_description>
+        <size>md</size>
+        <sp_column display_value="1">29115212c38b2a105c5cb71ed401316a</sp_column>
+        <sp_page display_value="sc_cat_item">9f12251147132100ba13a5554ee490f4</sp_page>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-01 10:18:34</sys_created_on>
+        <sys_id>61115212c38b2a105c5cb71ed401316d</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>Create Ride Schedule</sys_name>
+        <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name>sp_instance_link_61115212c38b2a105c5cb71ed401316d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 06:55:12</sys_updated_on>
+        <title>Create Ride Schedule</title>
+        <type>sc_cat_item</type>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"template": {
+		"value": "Color Box",
+		"displayValue": "Color Box"
+	},
+	"link_template": {
+		"value": "Circle Icon",
+		"displayValue": "Circle Icon"
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="delete_multiple" query="documentkey=61115212c38b2a105c5cb71ed401316d"/>
+</record_update>

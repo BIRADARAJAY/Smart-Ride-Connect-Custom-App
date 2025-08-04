@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_form_screen">
+    <sys_sg_form_screen action="INSERT_OR_UPDATE">
+        <alert/>
+        <available_offline>true</available_offline>
+        <data_item/>
+        <description/>
+        <dynamic_prefetch_count/>
+        <empty_state/>
+        <fetch_type>not_required</fetch_type>
+        <filter/>
+        <hide_filters>false</hide_filters>
+        <hide_screen_name>false</hide_screen_name>
+        <icon display_value="icon-Address-Book">bbd74d82c38f66105c5cb71ed40131c5</icon>
+        <item_view/>
+        <name>Ride Schedules Form Screen</name>
+        <override_context_with_data_item>false</override_context_with_data_item>
+        <parameter_screen/>
+        <roles_override/>
+        <segments_height>medium</segments_height>
+        <segments_min_width>medium</segments_min_width>
+        <sys_class_name>sys_sg_form_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 10:20:14</sys_created_on>
+        <sys_id>40e7cd06c38f66105c5cb71ed4013166</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ride Schedules Form Screen</sys_name>
+        <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name>sys_sg_form_screen_40e7cd06c38f66105c5cb71ed4013166</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 10:20:14</sys_updated_on>
+        <table>x_1633452_smrt_ri_ride_schedules</table>
+        <use_view_config>true</use_view_config>
+        <view_config display_value="Ride Schedules Detail Screen View Config">8ce7cd06c38f66105c5cb71ed401311d</view_config>
+    </sys_sg_form_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=40e7cd06c38f66105c5cb71ed4013166"/>
+</record_update>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_master_item">
+    <sys_sg_master_item action="INSERT_OR_UPDATE">
+        <condition_order/>
+        <datasource_table>x_1633452_smrt_ri_ride_schedules</datasource_table>
+        <datasource_table_condition/>
+        <embedded_screen display_value="Ride Schedules Form Screen">40e7cd06c38f66105c5cb71ed4013166</embedded_screen>
+        <item_view/>
+        <name>Ride Schedules master_item</name>
+        <sys_class_name>sys_sg_master_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 10:20:14</sys_created_on>
+        <sys_id>c8e7cd06c38f66105c5cb71ed4013169</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ride Schedules master_item</sys_name>
+        <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name>sys_sg_master_item_c8e7cd06c38f66105c5cb71ed4013169</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 10:20:14</sys_updated_on>
+        <use_view_config>true</use_view_config>
+        <view_config display_value="Ride Schedules List Screen View Config">7bd74d82c38f66105c5cb71ed40131c9</view_config>
+    </sys_sg_master_item>
+</record_update>

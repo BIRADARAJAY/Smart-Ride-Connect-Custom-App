@@ -1,0 +1,1152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=3102000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>for_the_ride_request</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Ride Requests Record","reference":"x_1633452_smrt_ri_ride_requests","reference_display":"Ride Requests","type":"reference","base_type":"reference","usedInstances":{"4d428f56-9bb5-46b1-b1d8-a38c06741343":["record"],"7aae1495-152a-4027-ac71-c64812b760c0":["record"],"41596df9-0d0f-4360-aeaf-c6ffc4e611ae":["record"],"3c6db103-05ed-4c53-b05c-46844f1c55ad":["record"],"28490f8e-5d7c-493a-82d2-e2294ef451fc":["record"],"a11ec978-336a-4c37-a1ed-2aa656280336":["record"]},"attributes":{}},{"name":"Created_1.current.ride_schedule.ride_provider","label":"Trigger - Record Created➛Ride Requests Record➛Ride Schedule➛Ride provider","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1633452_smrt_ri_ride_schedules","column_name":"ride_provider","usedInstances":{"4d428f56-9bb5-46b1-b1d8-a38c06741343":["approval_conditions"]}},{"name":"4d428f56-9bb5-46b1-b1d8-a38c06741343.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"282ce0f2-7462-43c3-ac13-133ad6a68127":["condition"],"e565d70c-6505-4c64-a7c1-41e764786bc8":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>6e7c61c2c3c3a6105c5cb71ed4013195</master_snapshot>
+        <master_snapshot_digest/>
+        <name>For the Ride Request</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>7a7c61c2c3c3a6105c5cb71ed40131e6</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 12:08:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>89a0ed4ac343a6105c5cb71ed401316e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>For the Ride Request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name>sys_hub_flow_89a0ed4ac343a6105c5cb71ed401316e</sys_update_name>
+        <sys_updated_by>Ajay.Biradar</sys_updated_by>
+        <sys_updated_on>2025-08-04 13:36:26</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=89a0ed4ac343a6105c5cb71ed401316e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=89a0ed4ac343a6105c5cb71ed401316e"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1633452_smrt_ri_ride_requests">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 13:00:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7a7c61c2c3c3a6105c5cb71ed40131e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:10</sys_updated_on>
+        <table>x_1633452_smrt_ri_ride_requests</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>89a0ed4ac343a6105c5cb71ed401316e</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 13:00:10</sys_created_on>
+        <sys_id>b67c61c2c3c3a6105c5cb71ed40131e7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:10</sys_updated_on>
+        <trigger display_value="">7a7c61c2c3c3a6105c5cb71ed40131e6</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=89a0ed4ac343a6105c5cb71ed401316e^sys_idNOT INb67c61c2c3c3a6105c5cb71ed40131e7"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=89a0ed4ac343a6105c5cb71ed401316e"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=89a0ed4ac343a6105c5cb71ed401316e^sys_idNOT IN01a0ed4ac343a6105c5cb71ed4013171"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>89a0ed4ac343a6105c5cb71ed401316e</id>
+        <name>For the Ride Request</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 12:08:26</sys_created_on>
+        <sys_id>01a0ed4ac343a6105c5cb71ed4013171</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 12:08:26</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=01a0ed4ac343a6105c5cb71ed4013171"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=89a0ed4ac343a6105c5cb71ed401316e^sys_idNOT IN021469cec343a6105c5cb71ed401316c,06146942c383a6105c5cb71ed4013177"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="For the Ride Request">89a0ed4ac343a6105c5cb71ed401316e</model>
+        <model_id>89a0ed4ac343a6105c5cb71ed401316e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_89a0ed4ac343a6105c5cb71ed401316e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 12:23:31</sys_created_on>
+        <sys_id>021469cec343a6105c5cb71ed401316c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 12:23:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=021469cec343a6105c5cb71ed401316c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="For the Ride Request">89a0ed4ac343a6105c5cb71ed401316e</model>
+        <model_id>89a0ed4ac343a6105c5cb71ed401316e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_89a0ed4ac343a6105c5cb71ed401316e</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 12:23:31</sys_created_on>
+        <sys_id>06146942c383a6105c5cb71ed4013177</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 12:23:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=06146942c383a6105c5cb71ed4013177"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=89a0ed4ac343a6105c5cb71ed401316e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=89a0ed4ac343a6105c5cb71ed401316e"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=89a0ed4ac343a6105c5cb71ed401316e^sys_idNOT IN9a146942c383a6105c5cb71ed40131c3"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="For the Ride Request">89a0ed4ac343a6105c5cb71ed401316e</flow>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 12:23:32</sys_created_on>
+        <sys_id>9a146942c383a6105c5cb71ed40131c3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:04</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLeACuvgS522bZNEA2w3qeNuHIBUoaWgLpSmvSCnrLvLvHepmWRfHjpWtAwQBRFKcw6MzZ4Z++K4z4gLTL/U5cRnoAz3gEiJO2HyzBhyWatjhZKXmVoT7RIbRRr+UUQwDnUbhag6rNSMSF1PCBA6GkQ+RfmkO9ISwGO434tbHnfD9dJt8Tz2fxudvjjm27eHIcsQqkk4U4J8PTgRfYxBS4Eo/EBhj82f+wgyntdl22lsGzI+A65cPjwN9TSKMIxWG77WpQAHxqEemFhiebdqWZRjWxdB0x7ZrWr5NwDBwwzopNeCyhZvtqeGbBO6DXxLSoC0C4t9xtilXLJH1jKIV+SaCf3H3C0Oto4DYPcjmykcn5yMb9pZh4MHdWgYhz0YynNlkyOIV/5zhV0wCJTGTBZM4EgvcD9YKsgKRI6L3y/BpVgT8GPD0dPkkCz3CyiciZRS4sQShCKcBQ+qdjBsRxlGKfnZzdTe7dv76ML/67WbmzG7u57Pbq/nNtf6cnsv5GqsdM4Q5Fic7znP5+T8GwNQH5PHKRTQDXXhRsJYfPBkkhfyeB1tJX4XcD1JWGrL2iimxK+vi9Pt0bRidyvYqEQt1/33zR1PB2eBxuh2PCfGBdOjWpRXdVk/eAk22kFA93T4F5yOHSHhoGP+TiHN3eq2GV6EP7Hq7nY6TiwWqOuDrOHWcJ8KlcGToEN93KjyqpYjpJVFnZ3t+UcFRzPEFp/weTR2ntJX8fQoEwn3ALCy4SbfEefop33IWcy3ED4f/NC+OkBqpFb5Gb1dkkTNK74GBJysioF9E9en3QIiALyqoy6ApB42YZTgUk1YcKYstTgz+2GcSN0lPamTWkvnoTDZNSl2gljFReWwatktNY2KMCPVtw/CsSiY3wXSilDVJvElGH5fPIhUjO0B6dYpz8EY1Gw6SUbKrwYIEJZHcNq76gWb2BM1S0Gr2Zx/lf6Uss+HrWrO052g9137iJwTf8A+1wQMdkLLwCa33Fe7nEu+fRRTG3K/bkdpTC7i2XaH9lPP3c49OSMMI9gPYXXFOHrilvRAu4Zse3M+mpjuFIRhoejb6nTuaTl2PWJROxhOwzJr7bWG0YnsXrveC2pI2uXY5YKtwkja9HeF9JwBs+ODRAE93wFyYrf6Xzb0Pp3taAncQauQw5WUNw1swdTHO5/rN9kboZJvfp2Y8vZh6I3My8SZ4a8GMp0NwiTm0RmQ6GdsXo1rGN6DsgylbmPkhdxmxESmQDjf4kk2d1+X8LWUrQEpVjo6v0hz72PQdkgWpVEr1WbTUVMJI+xzyX26367R7wAKYXmj7KteHoFAfVntbGG4ol41+AUP/iuM7oVWf2cHK2V2paiJJds968pUKhhejKbXbLYZO2yxmC6Yb5tm3FwdmSNKZa219xqGCT1rzprMxeIWEazKpdgx7Wpq+SDF7J8V6O1Lsk9uoIhc775GvAfuOSljaV5xSx1RMcEJaNe/rUMMJDYNoAdXyXxLB19yNJpeAlDLslzGgpqKf6trVKtKEUir4xwLJOvBGNcNhLW+gzq9Q1aTQ7w0Y/AkZjeyOfnhavwG3AXoB79mXraOzImlLsr2167h963u2Vq+KZHcVcWBd6vXU7cXptFO3lqeXTn164dl3f29BcaYl5fE/SDqsKU8fAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=89a0ed4ac343a6105c5cb71ed401316e^sys_idNOT IN16146942c383a6105c5cb71ed40131f0,1e146942c383a6105c5cb71ed40131f1,56146942c383a6105c5cb71ed40131f2,da146942c383a6105c5cb71ed40131c7,da146942c383a6105c5cb71ed40131ef,de146942c383a6105c5cb71ed40131c5"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="For the Ride Request">89a0ed4ac343a6105c5cb71ed401316e</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>282ce0f2-7462-43c3-ac13-133ad6a68127</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 12:23:32</sys_created_on>
+        <sys_id>16146942c383a6105c5cb71ed40131f0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:01:55</sys_updated_on>
+        <ui_id>3c6db103-05ed-4c53-b05c-46844f1c55ad</ui_id>
+        <values>H4sIAAAAAAAA/9VV207cMBD9FZTnzTaOs5ssbwiEVKkFaaF9Qchy7DG4ci44DoWu+PeOk+wNFihtqVQpL57x2OecmRNfLAItg/0gkZmUM0UiRQiJSDQhMckgg1yk0xTiLBgFJS8Ad1oQlZW4vuWm9YHF4tACdyAZGYvWWijdwwPmpW5qw++/DtswIq61kZgP9i8uR0HNLZ7owAb7i0epX4VkeA4Gt86XmB5jdPe1X8tKtAXiYnoZ/DRUHg2ZvY9HmMEiD4eMArhzUEpAHIqbBkZBwUvJXWXvVxEkLU9Lsw5c69L1RAt+1+gfeDON/T4FyEwMIqyWbBCoD6sj7viZs61wrV3pVWkBTa+JBMVb4w43Y/2G09rpquxLHM/NsroybVGe9IoEqwM2+tE2CAJqT9Qjx8uRhTq7rr7PlyCPddlJMlA0leBmteLOWZ23zsNZBK0+36V2H96tNxjoNha8rnV5xWpb3eruPkRfjK8MLsbKVN8RZqOvyjEXnuoYO8HHxxg/6sJfudWe92c8Bov9nV9KfdPCRz9HkkQpnUUiTOMJDZNI8DDPZB7yPFaTJJlm05wED6OguW8ODW+atWLYKnbTesK9foNSrBO7U5p1A+eLhdW1O0B4tzDo8zAavJWRlwaZxuu53Thz7a87RqaUJpOYNYV1zGr8JDALSLBxzVOnzTG9N1+n32a7X0C7tN15N2y70Q/OexL7tFm7d9InBt/Fb/RdP7A7bJdF/5HtBlp/7rstrbdtt6X2P3GdyPNc5TALSS5EmKSQhVnM0xAmkaAqplGUqt9w3WteS16e3o13rKycVlrwrolrt0VZTKczAYImlE/xADEReUpAJhGhZBq/bLe9g9qrCfLDHL6BwEfx7c/e6wyW/jvZprCb2GDEtR22fTjfiA82pC/bsHfd77x+2Gu49a2EgmvD+rF6xpuPuP1lnz6HZMu8XKmuhUxpMBLnj3U17/KUqjPgVlwf+5t8D3unbht9q7Fod7zjidE32/l+Pj9/OlMNODbIwvwBTFW24H4iOoaPfw/JjEBK4yycTWP8PQCdhLmkNCT4uwDgoGL5Po/y5U9sEi208goAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="For the Ride Request">89a0ed4ac343a6105c5cb71ed401316e</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>e565d70c-6505-4c64-a7c1-41e764786bc8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 12:23:32</sys_created_on>
+        <sys_id>1e146942c383a6105c5cb71ed40131f1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:01:55</sys_updated_on>
+        <ui_id>28490f8e-5d7c-493a-82d2-e2294ef451fc</ui_id>
+        <values>H4sIAAAAAAAA/+VV24riQBD9FennEBKjMuPboggLszPgLL7MDqHTXdGGzmX64uiK/76VpBODDnOBeZGVvFSdqu5zylPJ04EITqZkBDwIb8MJi8IoGgbB8GYUJpMoCYc8ogAh8UhOM8BKBaxQHOMtlbZKHA4zBdQAj0OfWaUgN8cj4lzoUtL9ypVhhm2E5IiT6dOzR0qq8EQDikwPZ9BnKUmagMTSZcvpnKPZl1XMC2Yz5BWLNnnnOucOGfycI4JNFZ0w8AjsDOQckEhKpQaPZDTn1BRqT6ZGWUygaP6Qy31XsRG5aYRmdKfFX7x5FFR1KaAy5obQhbEbUJNO59TQRzyZGau6eRWCgW5mwiGlVppZP9cUPJRGFHnTYmgi2+5C2iy/byZCugN6/4fVSALKSmfFvJGVPm6K12VLciHyeiROoiwYlV1EjVEisaaicyAgoZ5xRstS5Ou4VMVW1M1IJfPXEgM/lcUr3qnFOvcpq3j7OFXqLzA/r9MrqkQl4hceg81Hj+i9nkmq9UkKzjB+sRWTRpiTENdTqEcQ106ompkSpfmBV23BET96zvTJ+D2HsduToXpnnoy/i8NJFI3Gw1hnysRK4MMhVvBiQRt9uQJLhAfLE/y1ffgE23YfftcueJu9W4mL3F2/d3DfAG4hxt+2EDfXtBBOxtVvxEd7EAzffdP2nFRbX/d2QBt88/+xQRDx6NLwZ+jX/P4JVq3fFwIk12/QbM0OGdIyEDe0zwzvwMHKgd1X4NtcH06C+ndF3v9vPgbP/wDu1zdhAwkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="For the Ride Request">89a0ed4ac343a6105c5cb71ed401316e</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>e565d70c-6505-4c64-a7c1-41e764786bc8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 12:23:32</sys_created_on>
+        <sys_id>56146942c383a6105c5cb71ed40131f2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:01:55</sys_updated_on>
+        <ui_id>a11ec978-336a-4c37-a1ed-2aa656280336</ui_id>
+        <values>H4sIAAAAAAAA/9VV207cMBD9FZTnzTaOs5ssbwiEVKkFaaF9Qchy7DG4ci44DoWu+PeOk+wNFihtqVQpL57x2OecmRNfLAItg/0gkZmUM0UiRQiJSDQhMckgg1yk0xTiLBgFJS8Ad1oQlZW4vuWm9YHF4tACdyAZGYvWWijdwwPmpW5qw++/DtswIq61kZgP9i8uR0HNLZ7owAb7i0epX4VkeA4Gt86XmB5jdPe1X8tKtAXiYnoZ/DRUHg2ZvY9HmMEiD4eMArhzUEpAHIqbBkZBwUvJXWXvVxEkLU9Lsw5c69L1RAt+1+gfeDON/T4FyEwMIqyWbBCoD6sj7viZs61wrV3pVWkBTa+JBMVb4w43Y/2G09rpquxLHM/NsroybVGe9IoEqwM2+tE2CAJqT9Qjx8uRhTq7rr7PlyCPddlJMlA0leBmteLOWZ23zsNZBK0+36V2H96tNxjoNha8rnV5xWpb3eruPkRfjK8MLsbKVN8RZqOvyjEXnuoYO8HHxxg/6sJfudWe92c8Bov9nV9KfdPCRz9HkkQpnUUiTOMJDZNI8DDPZB7yPFaTJJlm05wED6OguW8ODW+atWLYKnbTesK9foNSrBO7U5p1A+eLhdW1O0B4tzDo8zAavJWRlwaZxuu53Thz7a87RqaUJpOYNYV1zGr8JDALSLBxzVOnzTG9N1+n32a7X0C7tN15N2y70Q/OexL7tFm7d9InBt/Fb/RdP7A7bJdF/5HtBlp/7rstrbdtt6X2P3GdyPNc5TALSS5EmKSQhVnM0xAmkaAqplGUqt9w3WteS16e3o13rKycVlrwrolrt0VZTKczAYImlE/xADEReUpAJhGhZBq/bLe9g9qrCfLDHL6BwEfx7c/e6wyW/jvZprCb2GDEtR22fTjfiA82pC/bsHfd77x+2Gu49a2EgmvD+rF6xpuPuP1lnz6HZMu8XKmuhUxpMBLnj3U17/KUqjPgVlwf+5t8D3unbht9q7Fod7zjidE32/l+Pj9/OlMNODbIwvwBTFW24H4iOoaPfw/JjEBK4yycTWP8PQCdhLmkNCT4uwDgoGL5Po/y5U9sEi208goAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="For the Ride Request">89a0ed4ac343a6105c5cb71ed401316e</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 12:23:32</sys_created_on>
+        <sys_id>da146942c383a6105c5cb71ed40131c7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:01:55</sys_updated_on>
+        <ui_id>41596df9-0d0f-4360-aeaf-c6ffc4e611ae</ui_id>
+        <values>H4sIAAAAAAAA/9WWbU/bMBDHv0qV100Vx2mT8m4CISFtIBXGmwlFjn2mlpyHOQ7QVXz3nZP0ubDBxqRJfeM7n333v/vF/bb0lPBOvEgkQkwlCSQhJCDBmIQkgQQyHk9iCBNv6BUsB9xpgJdG4PqB6cYZlstTA8yCSMmIN8ZAYZ+f0S9UXWm2uO23oYXPlRbo906+3Q29ihk80YLxTpZ7rt9NSbMMNG6drXLaz9EuKrcWJW9yzCtVK+PnPvKs9wwuztCDQS4dMvTgyUIhAPOQTNcw9HJWCGZLs1hbsGhxVeiNYa4K2xWas6da/cCbaej2ScDKeC/Cepn2AnVmecYsu7am4bYxa71KxaHuNBEgWaPt6bat23BVWVUWXYhlmV5Fl7rJi8tOEW99wFY/mhqTgMoV6jLHy7EKeT0vH2erJM9V0UrSl6hLzvR6xaw1KmusS2fpNermmNqd+bjeoKHdmLOqUsV9WpnyQbX3Yfb56F7jYiR1+Yhp1uq+GDHuSh1hJ9joHO1nrfmWGeXq/oLHYLC782uhvjdw4eZIkCCm04D7cTimfhRw5meJyHyWhXIcRZNkkhHveejVi/pUs7reKIatSr83ruBOv16ptBW7VTptB84Fc6Mq+wnTe4Ben+dhz1ZCXhtkGm7mduvMDV9PKZlQGo3DtM6NTY3Cn4DUABZY2/qQtBm6B7ON+23Y/Ua2K+xu2mE7nn1P3oHt83bs4LJz9NyFb+SuG9gj2CXBf4RdX9afc7ej9S52O2r/E+p4lmUyg6lPMs79KIbET0IW+zAOOJUhDYJYvoO6X7EWvT69W+9YUVolFWdtEze0EQoYEgGnEWUTPICPeRYTEFFAKJnSQ9wu3UGLwTWfg2g0mMHjHIrBNoQg3v74/bqOFYWXu4UcL6/HcQPFLo2zLXsPI30dxo6997yB2HF4cA2FnCmddsP1AqF7tf1lWl/KZAdhJiVw9+9GKtACpzBtYz7kQZXXwAyfn7ubXA87Xndx32ksQo93HOC+3c6Po/3mcKZqsGkvS+oOSGVpcuYmoq1w/yMRTQnENEz86STEjwTQsZ8JSn2CHw0ABjIUH/M03/0ECiRV7fgKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="For the Ride Request">89a0ed4ac343a6105c5cb71ed401316e</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>282ce0f2-7462-43c3-ac13-133ad6a68127</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 12:23:32</sys_created_on>
+        <sys_id>da146942c383a6105c5cb71ed40131ef</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:01:55</sys_updated_on>
+        <ui_id>7aae1495-152a-4027-ac71-c64812b760c0</ui_id>
+        <values>H4sIAAAAAAAA/+VV24riQBD9FennEBKjMuPboggLszPgLL7MDqHTXdGGzmX64uiK/76VpBODDnOBeZGVvFSdqu5zylPJ04EITqZkBDwIb8MJi8IoGgbB8GYUJpMoCYc8ogAh8UhOM8BKBaxQHOMtlbZKHA4zBdQAj0OfWaUgN8cj4lzoUtL9ypVhhm2E5IiT6dOzR0qq8EQDikwPZ9BnKUmagMTSZcvpnKPZl1XMC2Yz5BWLNnnnOucOGfycI4JNFZ0w8AjsDOQckEhKpQaPZDTn1BRqT6ZGWUygaP6Qy31XsRG5aYRmdKfFX7x5FFR1KaAy5obQhbEbUJNO59TQRzyZGau6eRWCgW5mwiGlVppZP9cUPJRGFHnTYmgi2+5C2iy/byZCugN6/4fVSALKSmfFvJGVPm6K12VLciHyeiROoiwYlV1EjVEisaaicyAgoZ5xRstS5Ou4VMVW1M1IJfPXEgM/lcUr3qnFOvcpq3j7OFXqLzA/r9MrqkQl4hceg81Hj+i9nkmq9UkKzjB+sRWTRpiTENdTqEcQ106ompkSpfmBV23BET96zvTJ+D2HsduToXpnnoy/i8NJFI3Gw1hnysRK4MMhVvBiQRt9uQJLhAfLE/y1ffgE23YfftcueJu9W4mL3F2/d3DfAG4hxt+2EDfXtBBOxtVvxEd7EAzffdP2nFRbX/d2QBt88/+xQRDx4aXhz9Cv+f0TrFq/LwRIrt+g2ZodMqRlIG5onxnegYOVA7uvwLe5PpwE9e+KvP/ffAye/wGEsHMVAwkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="For the Ride Request">89a0ed4ac343a6105c5cb71ed401316e</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 12:23:32</sys_created_on>
+        <sys_id>de146942c383a6105c5cb71ed40131c5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:01:55</sys_updated_on>
+        <ui_id>4d428f56-9bb5-46b1-b1d8-a38c06741343</ui_id>
+        <values>H4sIAAAAAAAA/+2Y32/iOBDH/xXkZ8olhKSBt6qo0p7udqXS3ZdSRcZ2ik8mydpOtxzif7+J7fxYaFm4Yx96Xamq5Jmx/Z1hPtjmfoM4RRN0GadDNh4PvYXveYHnxSHx4oAtgsvoMsDEQ32U4RWDSMlILimMn7AoK8Nmcy0Z1owm/oCUUrJMb7fgp1wVAq+/uDCwkCUXFPxocv/QRwWWsKJmEk02O65jJQm8YAJCb2tNuxr1uqjGNCflCnQlvDb+4WZOnaf3YQoemFTJ8fqIPWuWUQY6UiwU66MVzijWuVyjiZYlGCBn+ikT6yZiyTNt81zhZ8X/ho2DYRWXMkiMuBo0w8TVx5rTKdZ4BisTXcqmXDknTNmSUJbiUujrrs0GfCo0zzM7ReOFqGfnolxlH21BULNA5+MoFYhgRZVnpdymlc6W+bfbWuQNz0xFXIoiJ1g0I6y15ItSV3I2iAlmSrzCRcGzx6SQ+RM3k0HKavAoYDBIRf4N9lT8MRtgUukeQFXx4AbsU2P+giWvkvgTloHJ2z5Sa3UtsFJtKlDD5GtZKbGJuRQSUwVbgmoekbzQV7DLE3Oat33X7gtysLdI20p2ubbbnxM/CoJROEzUSupEcvijLJHsa8mUVvt9fwvu3m3rPg2CI4TWENw5pTvCHQJmmBjf9wSYab2P1uEA8A8D4CwtAbZ1XgAg9t4QAC6tN0/Aj5qfjaIghH+XaeD5Q9+LWRTHZOxhEkdROAraHgIFkAMW0N5YwdotBjPYsHdl3Ez00lzWLb4PwKHQ02A4QngNw5VTDns55a+m5ABR8FFmjztwzGqjA2N4IhivHw1+9J7QKPndTpWtZa/OP4eharvPGYeu+1D1UTRcRGMvphc09RYXozgILzBh3gWL/JCFNCKhH/wE7jz/0Hc5jV9o0pQz0b1r1Y59yjqe06A6QtUeVDdO1mtyHVJm+NKZY+bvnDnnQyv2vLfE1nu6d5GDzcY6R89feSmzAwQkS65MZ7xKQifiNCKOEFkT8btVuQvErvh/w0Pwi4f/Pw+j8GCrda7zTVeTPKO8Uqw6VLjrlbrK1p/vX3iQD8wjRZElo6VgdlQXZrt92Ifovy94GnNHFKJ57MOG6keFccS1tz03qUtde0d0Tkfe6FzP/zcG3nt5/5CDvZaO296iJRQIGr/7a9ccWdlzNJmjLM/YHPXnqIpKquYyZogAcY3D2Dab7dZaSondAn5n2M6meK1MZI2XsX5nSQwMzn6OH9uOqEnN37Rkvaktyn6Z6sdUrdPWhe+deDMXYFb67Y53T77wbCff6Bd+53g6Jc3jAo41+PY7I5MP/wBrGNg3gRYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=89a0ed4ac343a6105c5cb71ed401316e"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=89a0ed4ac343a6105c5cb71ed401316e^sys_idNOT IN96146942c383a6105c5cb71ed40131f1,9e146942c383a6105c5cb71ed40131f0,da146942c383a6105c5cb71ed40131c8,de146942c383a6105c5cb71ed40131f2"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d2146942c383a6105c5cb71ed40131f1</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="For the Ride Request">89a0ed4ac343a6105c5cb71ed401316e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 12:23:32</sys_created_on>
+        <sys_id>96146942c383a6105c5cb71ed40131f1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:08</sys_updated_on>
+        <ui_id>e565d70c-6505-4c64-a7c1-41e764786bc8</ui_id>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8lUBnWdC7jm9BiwAB2gZIglzaQFiRK5stRaoiZcc1/O9d6uEYqY0WRY69mbPk7sxqxjtPd7bprHnQV8aIpfIWX558TyiH0e+dp6BGb+ExrbiwQquiB3xvDbJzhZvq4g6/IbPICeXCNBK2jyeLbCUkb3Gc0UBLnSy23mL3qmS3DRYSSpTU4962Qi3pueB0qkKooksWsSTOkzgM43kalXlSRjFPACGhe9PD9xPli4894p/V4uYRbqZJuuWOVhT6Hj5bVJzoLyqQBn2vBsXB6nZ7QFoEfqvkC7ASylI7z11+NuIn9Y6zzF2skDQyHIqHYzFubYDZSguGt40jOCAWSjm+YVp2tfo86HD7xgo6aad9E9IZ6oeNI+1YjJSq+5Xe3E0Dr4XqBY5FqRnIwwksraHsLBr3YVBiTY2KGpqGllM0rV6L/jFxqYOlpENQSb2hoc4/ATBHPKAdQXBN+IcefoRWOBWfqA09HmiWYAQreq9RO9uShH2/luJH5wgNAkcpxbANumBYKxp7RXPWOLLe+78b9ciju13K03heZfnssiyzWZqX0ayM+HwGyZyF+bs0StIkIG6kDmRhLFjc7792YZiQK8+5+63avkUuLiGrsijMTucizU/l4kQizoch/kMY3Of7yyyEYfg/DMdhEKYYTD1q64f/cxaenPGHCWbwDUcmDBF5cNjN9N/uClsygGDH0Ea3352EF2z/C3S1XGglBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">da146942c383a6105c5cb71ed40131f0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="For the Ride Request">89a0ed4ac343a6105c5cb71ed401316e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>282ce0f2-7462-43c3-ac13-133ad6a68127</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 12:23:32</sys_created_on>
+        <sys_id>9e146942c383a6105c5cb71ed40131f0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:08</sys_updated_on>
+        <ui_id>e5c1588e-e85e-49cd-8ae2-0c16718d97bb</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">92146942c383a6105c5cb71ed40131c8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="For the Ride Request">89a0ed4ac343a6105c5cb71ed401316e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 12:23:32</sys_created_on>
+        <sys_id>da146942c383a6105c5cb71ed40131c8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:08</sys_updated_on>
+        <ui_id>282ce0f2-7462-43c3-ac13-133ad6a68127</ui_id>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8lUBnWaCedXwzWgQI0DZAE+TSBsKKpGyiFKmSlB3X8L93qYdjpDZaFDn2Js5yd2eWs9oHunNt5+yDXlorVipYfH0KA6E8ht/7QEHDg0VAtWLCCa3KHgiDDcjOB27rq2XbGr3hDFEmbCth93g2SNdCMsPHHi0YrOS4CRb7VyG3a3kpoeISa9w7I9QK0wXDU02gjq9pTNOkSBNCknkWV0VaxQlLgUOK96bE9xPlq489El7U4vshbqdO2jBPKyZhwJ8dVwzpL2qQlodBA4qB02Z3RAwHdqfkC7AWymG5wF9+tuIn1k7y3F+sOWqkfAgej+U4tQGmay0ov2s9wQFxUMkxh2rZNerzoMPPm9fQSTfNG5HOYj3eetKexUipvl/r7Zep4Y1QvcAxKDUFeTyBwzFUnePWPwyXvMFCZQNti8Mp/WOKPhm5NNFK4iGqpd5iU++fCKgnHuGMILpB/EMPP4IRXsUnLIPJA80KrKBl7zUs5wxKOPRjKX90ntAgcJRSDtPAC5Ya0bol9tnwkfUh/N2oJx7d7zOWJfM6L2bXVZXPsqKKZ1XM5jNI55QU77I4zdIIequCLK0Dxw+Hbx0hKYOL7n6rsm+xF9eQ13lM8vN7kRXn9uLMRlxehuQPy+Cf7y93gRDyfxlOl0HYcjD1qK1v/s+78OSNP3Swg28Yp8IikQeP3U7/dh/YoQEEPYW22nz3El6wwy+RZUHiJQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1e146942c383a6105c5cb71ed40131f2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="For the Ride Request">89a0ed4ac343a6105c5cb71ed401316e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <parent_ui_id>e565d70c-6505-4c64-a7c1-41e764786bc8</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 12:23:32</sys_created_on>
+        <sys_id>de146942c383a6105c5cb71ed40131f2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:08</sys_updated_on>
+        <ui_id>1f929663-3936-4d22-bd17-15a05f751ab6</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=89a0ed4ac343a6105c5cb71ed401316e"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=89a0ed4ac343a6105c5cb71ed401316e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_89a0ed4ac343a6105c5cb71ed401316e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 12:23:31</sys_created_on>
+        <sys_id>c2146942c383a6105c5cb71ed4013176</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 12:23:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_89a0ed4ac343a6105c5cb71ed401316e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 12:23:31</sys_created_on>
+        <sys_id>c2146942c383a6105c5cb71ed4013179</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 12:23:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_89a0ed4ac343a6105c5cb71ed401316e"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_89a0ed4ac343a6105c5cb71ed401316e"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>for_the_ride_request</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Ride Requests Record","reference":"x_1633452_smrt_ri_ride_requests","reference_display":"Ride Requests","type":"reference","base_type":"reference","usedInstances":{"4d428f56-9bb5-46b1-b1d8-a38c06741343":["record"],"7aae1495-152a-4027-ac71-c64812b760c0":["record"],"41596df9-0d0f-4360-aeaf-c6ffc4e611ae":["record"],"3c6db103-05ed-4c53-b05c-46844f1c55ad":["record"],"28490f8e-5d7c-493a-82d2-e2294ef451fc":["record"],"a11ec978-336a-4c37-a1ed-2aa656280336":["record"]},"attributes":{}},{"name":"Created_1.current.ride_schedule.ride_provider","label":"Trigger - Record Created➛Ride Requests Record➛Ride Schedule➛Ride provider","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1633452_smrt_ri_ride_schedules","column_name":"ride_provider","usedInstances":{"4d428f56-9bb5-46b1-b1d8-a38c06741343":["approval_conditions"]}},{"name":"4d428f56-9bb5-46b1-b1d8-a38c06741343.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"282ce0f2-7462-43c3-ac13-133ad6a68127":["condition"],"e565d70c-6505-4c64-a7c1-41e764786bc8":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>For the Ride Request</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="For the Ride Request">89a0ed4ac343a6105c5cb71ed401316e</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 13:00:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6e7c61c2c3c3a6105c5cb71ed4013195</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:09</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=6e7c61c2c3c3a6105c5cb71ed4013195"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6e7c61c2c3c3a6105c5cb71ed4013195"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=6e7c61c2c3c3a6105c5cb71ed4013195"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=6e7c61c2c3c3a6105c5cb71ed4013195^sys_idNOT INe27c61c2c3c3a6105c5cb71ed4013196"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>6e7c61c2c3c3a6105c5cb71ed4013195</id>
+        <name>For the Ride Request</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 13:00:09</sys_created_on>
+        <sys_id>e27c61c2c3c3a6105c5cb71ed4013196</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:09</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=e27c61c2c3c3a6105c5cb71ed4013196"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=6e7c61c2c3c3a6105c5cb71ed4013195^sys_idNOT IN667c61c2c3c3a6105c5cb71ed4013197,f27c61c2c3c3a6105c5cb71ed40131bd"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="For the Ride Request">6e7c61c2c3c3a6105c5cb71ed4013195</model>
+        <model_id>6e7c61c2c3c3a6105c5cb71ed4013195</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_6e7c61c2c3c3a6105c5cb71ed4013195</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 13:00:09</sys_created_on>
+        <sys_id>667c61c2c3c3a6105c5cb71ed4013197</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=667c61c2c3c3a6105c5cb71ed4013197"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="For the Ride Request">6e7c61c2c3c3a6105c5cb71ed4013195</model>
+        <model_id>6e7c61c2c3c3a6105c5cb71ed4013195</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_6e7c61c2c3c3a6105c5cb71ed4013195</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 13:00:09</sys_created_on>
+        <sys_id>f27c61c2c3c3a6105c5cb71ed40131bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f27c61c2c3c3a6105c5cb71ed40131bd"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=6e7c61c2c3c3a6105c5cb71ed4013195"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6e7c61c2c3c3a6105c5cb71ed4013195"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=6e7c61c2c3c3a6105c5cb71ed4013195^sys_idNOT IN327c61c2c3c3a6105c5cb71ed40131cf"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="For the Ride Request">6e7c61c2c3c3a6105c5cb71ed4013195</flow>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 13:00:10</sys_created_on>
+        <sys_id>327c61c2c3c3a6105c5cb71ed40131cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:10</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLeACuvgS522bZNEA2w3qeNuHIBUoaWgLpSmvSCnrLvLvHepmWRfHjpWtAwQBRFKcw6MzZ4Z++K4z4gLTL/U5cRnoAz3gEiJO2HyzBhyWatjhZKXmVoT7RIbRRr+UUQwDnUbhag6rNSMSF1PCBA6GkQ+RfmkO9ISwGO434tbHnfD9dJt8Tz2fxudvjjm27eHIcsQqkk4U4J8PTgRfYxBS4Eo/EBhj82f+wgyntdl22lsGzI+A65cPjwN9TSKMIxWG77WpQAHxqEemFhiebdqWZRjWxdB0x7ZrWr5NwDBwwzopNeCyhZvtqeGbBO6DXxLSoC0C4t9xtilXLJH1jKIV+SaCf3H3C0Oto4DYPcjmykcn5yMb9pZh4MHdWgYhz0YynNlkyOIV/5zhV0wCJTGTBZM4EgvcD9YKsgKRI6L3y/BpVgT8GPD0dPkkCz3CyiciZRS4sQShCKcBQ+qdjBsRxlGKfnZzdTe7dv76ML/67WbmzG7u57Pbq/nNtf6cnsv5GqsdM4Q5Fic7znP5+T8GwNQH5PHKRTQDXXhRsJYfPBkkhfyeB1tJX4XcD1JWGrL2iimxK+vi9Pt0bRidyvYqEQt1/33zR1PB2eBxuh2PCfGBdOjWpRXdVk/eAk22kFA93T4F5yOHSHhoGP+TiHN3eq2GV6EP7Hq7nY6TiwWqOuDrOHWcJ8KlcGToEN93KjyqpYjpJVFnZ3t+UcFRzPEFp/weTR2ntJX8fQoEwn3ALCy4SbfEefop33IWcy3ED4f/NC+OkBqpFb5Gb1dkkTNK74GBJysioF9E9en3QIiALyqoy6ApB42YZTgUk1YcKYstTgz+2GcSN0lPamTWkvnoTDZNSl2gljFReWwatktNY2KMCPVtw/CsSiY3wXSilDVJvElGH5fPIhUjO0B6dYpz8EY1Gw6SUbKrwYIEJZHcNq76gWb2BM1S0Gr2Zx/lf6Uss+HrWrO052g9137iJwTf8A+1wQMdkLLwCa33Fe7nEu+fRRTG3K/bkdpTC7i2XaH9lPP3c49OSMMI9gPYXXFOHrilvRAu4Zse3M+mpjuFIRhoejb6nTuaTl2PWJROxhOwzJr7bWG0YnsXrveC2pI2uXY5YKtwkja9HeF9JwBs+ODRAE93wFyYrf6Xzb0Pp3taAncQauQw5WUNw1swdTHO5/rN9kboZJvfp2Y8vZh6I3My8SZ4a8GMp0NwiTm0RmQ6GdsXo1rGN6DsgylbmPkhdxmxESmQDjf4kk2d1+X8LWUrQEpVjo6v0hz72PQdkgWpVEr1WbTUVMJI+xzyX26367R7wAKYXmj7KteHoFAfVntbGG4ol41+AUP/iuM7oVWf2cHK2V2paiJJds968pUKhhejKbXbLYZO2yxmC6Yb5tm3FwdmSNKZa219xqGCT1rzprMxeIWEazKpdgx7Wpq+SDF7J8V6O1Lsk9uoIhc775GvAfuOSljaV5xSx1RMcEJaNe/rUMMJDYNoAdXyXxLB19yNJpeAlDLslzGgpqKf6trVKtKEUir4xwLJOvBGNcNhLW+gzq9Q1aTQ7w0Y/AkZjeyOfnhavwG3AXoB79mXraOzImlLsr2167h963u2Vq+KZHcVcWBd6vXU7cXptFO3lqeXTn164dl3f29BcaYl5fE/SDqsKU8fAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=6e7c61c2c3c3a6105c5cb71ed4013195^sys_idNOT IN327c61c2c3c3a6105c5cb71ed40131cd,727c61c2c3c3a6105c5cb71ed40131cc,727c61c2c3c3a6105c5cb71ed40131ce,7a7c61c2c3c3a6105c5cb71ed40131cd,b27c61c2c3c3a6105c5cb71ed40131cb,ba7c61c2c3c3a6105c5cb71ed40131ce"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="For the Ride Request">6e7c61c2c3c3a6105c5cb71ed4013195</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>282ce0f2-7462-43c3-ac13-133ad6a68127</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 13:00:10</sys_created_on>
+        <sys_id>327c61c2c3c3a6105c5cb71ed40131cd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:10</sys_updated_on>
+        <ui_id>7aae1495-152a-4027-ac71-c64812b760c0</ui_id>
+        <values>H4sIAAAAAAAA/+VV24riQBD9FennEBKjMuPboggLszPgLL7MDqHTXdGGzmX64uiK/76VpBODDnOBeZGVvFSdqu5zylPJ04EITqZkBDwIb8MJi8IoGgbB8GYUJpMoCYc8ogAh8UhOM8BKBaxQHOMtlbZKHA4zBdQAj0OfWaUgN8cj4lzoUtL9ypVhhm2E5IiT6dOzR0qq8EQDikwPZ9BnKUmagMTSZcvpnKPZl1XMC2Yz5BWLNnnnOucOGfycI4JNFZ0w8AjsDOQckEhKpQaPZDTn1BRqT6ZGWUygaP6Qy31XsRG5aYRmdKfFX7x5FFR1KaAy5obQhbEbUJNO59TQRzyZGau6eRWCgW5mwiGlVppZP9cUPJRGFHnTYmgi2+5C2iy/byZCugN6/4fVSALKSmfFvJGVPm6K12VLciHyeiROoiwYlV1EjVEisaaicyAgoZ5xRstS5Ou4VMVW1M1IJfPXEgM/lcUr3qnFOvcpq3j7OFXqLzA/r9MrqkQl4hceg81Hj+i9nkmq9UkKzjB+sRWTRpiTENdTqEcQ106ompkSpfmBV23BET96zvTJ+D2HsduToXpnnoy/i8NJFI3Gw1hnysRK4MMhVvBiQRt9uQJLhAfLE/y1ffgE23YfftcueJu9W4mL3F2/d3DfAG4hxt+2EDfXtBBOxtVvxEd7EAzffdP2nFRbX/d2QBt88/+xQRDx4aXhz9Cv+f0TrFq/LwRIrt+g2ZodMqRlIG5onxnegYOVA7uvwLe5PpwE9e+KvP/ffAye/wGEsHMVAwkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="For the Ride Request">6e7c61c2c3c3a6105c5cb71ed4013195</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 13:00:10</sys_created_on>
+        <sys_id>727c61c2c3c3a6105c5cb71ed40131cc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:10</sys_updated_on>
+        <ui_id>41596df9-0d0f-4360-aeaf-c6ffc4e611ae</ui_id>
+        <values>H4sIAAAAAAAA/9WWbU/bMBDHv0qV100Vx2mT8m4CISFtIBXGmwlFjn2mlpyHOQ7QVXz3nZP0ubDBxqRJfeM7n333v/vF/bb0lPBOvEgkQkwlCSQhJCDBmIQkgQQyHk9iCBNv6BUsB9xpgJdG4PqB6cYZlstTA8yCSMmIN8ZAYZ+f0S9UXWm2uO23oYXPlRbo906+3Q29ihk80YLxTpZ7rt9NSbMMNG6drXLaz9EuKrcWJW9yzCtVK+PnPvKs9wwuztCDQS4dMvTgyUIhAPOQTNcw9HJWCGZLs1hbsGhxVeiNYa4K2xWas6da/cCbaej2ScDKeC/Cepn2AnVmecYsu7am4bYxa71KxaHuNBEgWaPt6bat23BVWVUWXYhlmV5Fl7rJi8tOEW99wFY/mhqTgMoV6jLHy7EKeT0vH2erJM9V0UrSl6hLzvR6xaw1KmusS2fpNermmNqd+bjeoKHdmLOqUsV9WpnyQbX3Yfb56F7jYiR1+Yhp1uq+GDHuSh1hJ9joHO1nrfmWGeXq/oLHYLC782uhvjdw4eZIkCCm04D7cTimfhRw5meJyHyWhXIcRZNkkhHveejVi/pUs7reKIatSr83ruBOv16ptBW7VTptB84Fc6Mq+wnTe4Ben+dhz1ZCXhtkGm7mduvMDV9PKZlQGo3DtM6NTY3Cn4DUABZY2/qQtBm6B7ON+23Y/Ua2K+xu2mE7nn1P3oHt83bs4LJz9NyFb+SuG9gj2CXBf4RdX9afc7ej9S52O2r/E+p4lmUyg6lPMs79KIbET0IW+zAOOJUhDYJYvoO6X7EWvT69W+9YUVolFWdtEze0EQoYEgGnEWUTPICPeRYTEFFAKJnSQ9wu3UGLwTWfg2g0mMHjHIrBNoQg3v74/bqOFYWXu4UcL6/HcQPFLo2zLXsPI30dxo6997yB2HF4cA2FnCmddsP1AqF7tf1lWl/KZAdhJiVw9+9GKtACpzBtYz7kQZXXwAyfn7ubXA87Xndx32ksQo93HOC+3c6Po/3mcKZqsGkvS+oOSGVpcuYmoq1w/yMRTQnENEz86STEjwTQsZ8JSn2CHw0ABjIUH/M03/0ECiRV7fgKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="For the Ride Request">6e7c61c2c3c3a6105c5cb71ed4013195</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>e565d70c-6505-4c64-a7c1-41e764786bc8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 13:00:10</sys_created_on>
+        <sys_id>727c61c2c3c3a6105c5cb71ed40131ce</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:10</sys_updated_on>
+        <ui_id>28490f8e-5d7c-493a-82d2-e2294ef451fc</ui_id>
+        <values>H4sIAAAAAAAA/+VV24riQBD9FennEBKjMuPboggLszPgLL7MDqHTXdGGzmX64uiK/76VpBODDnOBeZGVvFSdqu5zylPJ04EITqZkBDwIb8MJi8IoGgbB8GYUJpMoCYc8ogAh8UhOM8BKBaxQHOMtlbZKHA4zBdQAj0OfWaUgN8cj4lzoUtL9ypVhhm2E5IiT6dOzR0qq8EQDikwPZ9BnKUmagMTSZcvpnKPZl1XMC2Yz5BWLNnnnOucOGfycI4JNFZ0w8AjsDOQckEhKpQaPZDTn1BRqT6ZGWUygaP6Qy31XsRG5aYRmdKfFX7x5FFR1KaAy5obQhbEbUJNO59TQRzyZGau6eRWCgW5mwiGlVppZP9cUPJRGFHnTYmgi2+5C2iy/byZCugN6/4fVSALKSmfFvJGVPm6K12VLciHyeiROoiwYlV1EjVEisaaicyAgoZ5xRstS5Ou4VMVW1M1IJfPXEgM/lcUr3qnFOvcpq3j7OFXqLzA/r9MrqkQl4hceg81Hj+i9nkmq9UkKzjB+sRWTRpiTENdTqEcQ106ompkSpfmBV23BET96zvTJ+D2HsduToXpnnoy/i8NJFI3Gw1hnysRK4MMhVvBiQRt9uQJLhAfLE/y1ffgE23YfftcueJu9W4mL3F2/d3DfAG4hxt+2EDfXtBBOxtVvxEd7EAzffdP2nFRbX/d2QBt88/+xQRDx6NLwZ+jX/P4JVq3fFwIk12/QbM0OGdIyEDe0zwzvwMHKgd1X4NtcH06C+ndF3v9vPgbP/wDu1zdhAwkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="For the Ride Request">6e7c61c2c3c3a6105c5cb71ed4013195</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>282ce0f2-7462-43c3-ac13-133ad6a68127</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 13:00:10</sys_created_on>
+        <sys_id>7a7c61c2c3c3a6105c5cb71ed40131cd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:10</sys_updated_on>
+        <ui_id>3c6db103-05ed-4c53-b05c-46844f1c55ad</ui_id>
+        <values>H4sIAAAAAAAA/9VV207cMBD9FZTnzTaOs5ssbwiEVKkFaaF9Qchy7DG4ci44DoWu+PeOk+wNFihtqVQpL57x2OecmRNfLAItg/0gkZmUM0UiRQiJSDQhMckgg1yk0xTiLBgFJS8Ad1oQlZW4vuWm9YHF4tACdyAZGYvWWijdwwPmpW5qw++/DtswIq61kZgP9i8uR0HNLZ7owAb7i0epX4VkeA4Gt86XmB5jdPe1X8tKtAXiYnoZ/DRUHg2ZvY9HmMEiD4eMArhzUEpAHIqbBkZBwUvJXWXvVxEkLU9Lsw5c69L1RAt+1+gfeDON/T4FyEwMIqyWbBCoD6sj7viZs61wrV3pVWkBTa+JBMVb4w43Y/2G09rpquxLHM/NsroybVGe9IoEqwM2+tE2CAJqT9Qjx8uRhTq7rr7PlyCPddlJMlA0leBmteLOWZ23zsNZBK0+36V2H96tNxjoNha8rnV5xWpb3eruPkRfjK8MLsbKVN8RZqOvyjEXnuoYO8HHxxg/6sJfudWe92c8Bov9nV9KfdPCRz9HkkQpnUUiTOMJDZNI8DDPZB7yPFaTJJlm05wED6OguW8ODW+atWLYKnbTesK9foNSrBO7U5p1A+eLhdW1O0B4tzDo8zAavJWRlwaZxuu53Thz7a87RqaUJpOYNYV1zGr8JDALSLBxzVOnzTG9N1+n32a7X0C7tN15N2y70Q/OexL7tFm7d9InBt/Fb/RdP7A7bJdF/5HtBlp/7rstrbdtt6X2P3GdyPNc5TALSS5EmKSQhVnM0xAmkaAqplGUqt9w3WteS16e3o13rKycVlrwrolrt0VZTKczAYImlE/xADEReUpAJhGhZBq/bLe9g9qrCfLDHL6BwEfx7c/e6wyW/jvZprCb2GDEtR22fTjfiA82pC/bsHfd77x+2Gu49a2EgmvD+rF6xpuPuP1lnz6HZMu8XKmuhUxpMBLnj3U17/KUqjPgVlwf+5t8D3unbht9q7Fod7zjidE32/l+Pj9/OlMNODbIwvwBTFW24H4iOoaPfw/JjEBK4yycTWP8PQCdhLmkNCT4uwDgoGL5Po/y5U9sEi208goAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="For the Ride Request">6e7c61c2c3c3a6105c5cb71ed4013195</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 13:00:10</sys_created_on>
+        <sys_id>b27c61c2c3c3a6105c5cb71ed40131cb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:10</sys_updated_on>
+        <ui_id>4d428f56-9bb5-46b1-b1d8-a38c06741343</ui_id>
+        <values>H4sIAAAAAAAA/+2Y32/iOBDH/xXkZ8olhKSBt6qo0p7udqXS3ZdSRcZ2ik8mydpOtxzif7+J7fxYaFm4Yx96Xamq5Jmx/Z1hPtjmfoM4RRN0GadDNh4PvYXveYHnxSHx4oAtgsvoMsDEQ32U4RWDSMlILimMn7AoK8Nmcy0Z1owm/oCUUrJMb7fgp1wVAq+/uDCwkCUXFPxocv/QRwWWsKJmEk02O65jJQm8YAJCb2tNuxr1uqjGNCflCnQlvDb+4WZOnaf3YQoemFTJ8fqIPWuWUQY6UiwU66MVzijWuVyjiZYlGCBn+ikT6yZiyTNt81zhZ8X/ho2DYRWXMkiMuBo0w8TVx5rTKdZ4BisTXcqmXDknTNmSUJbiUujrrs0GfCo0zzM7ReOFqGfnolxlH21BULNA5+MoFYhgRZVnpdymlc6W+bfbWuQNz0xFXIoiJ1g0I6y15ItSV3I2iAlmSrzCRcGzx6SQ+RM3k0HKavAoYDBIRf4N9lT8MRtgUukeQFXx4AbsU2P+giWvkvgTloHJ2z5Sa3UtsFJtKlDD5GtZKbGJuRQSUwVbgmoekbzQV7DLE3Oat33X7gtysLdI20p2ubbbnxM/CoJROEzUSupEcvijLJHsa8mUVvt9fwvu3m3rPg2CI4TWENw5pTvCHQJmmBjf9wSYab2P1uEA8A8D4CwtAbZ1XgAg9t4QAC6tN0/Aj5qfjaIghH+XaeD5Q9+LWRTHZOxhEkdROAraHgIFkAMW0N5YwdotBjPYsHdl3Ez00lzWLb4PwKHQ02A4QngNw5VTDns55a+m5ABR8FFmjztwzGqjA2N4IhivHw1+9J7QKPndTpWtZa/OP4eharvPGYeu+1D1UTRcRGMvphc09RYXozgILzBh3gWL/JCFNCKhH/wE7jz/0Hc5jV9o0pQz0b1r1Y59yjqe06A6QtUeVDdO1mtyHVJm+NKZY+bvnDnnQyv2vLfE1nu6d5GDzcY6R89feSmzAwQkS65MZ7xKQifiNCKOEFkT8btVuQvErvh/w0Pwi4f/Pw+j8GCrda7zTVeTPKO8Uqw6VLjrlbrK1p/vX3iQD8wjRZElo6VgdlQXZrt92Ifovy94GnNHFKJ57MOG6keFccS1tz03qUtde0d0Tkfe6FzP/zcG3nt5/5CDvZaO296iJRQIGr/7a9ccWdlzNJmjLM/YHPXnqIpKquYyZogAcY3D2Dab7dZaSondAn5n2M6meK1MZI2XsX5nSQwMzn6OH9uOqEnN37Rkvaktyn6Z6sdUrdPWhe+deDMXYFb67Y53T77wbCff6Bd+53g6Jc3jAo41+PY7I5MP/wBrGNg3gRYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="For the Ride Request">6e7c61c2c3c3a6105c5cb71ed4013195</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>e565d70c-6505-4c64-a7c1-41e764786bc8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 13:00:10</sys_created_on>
+        <sys_id>ba7c61c2c3c3a6105c5cb71ed40131ce</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:10</sys_updated_on>
+        <ui_id>a11ec978-336a-4c37-a1ed-2aa656280336</ui_id>
+        <values>H4sIAAAAAAAA/9VV207cMBD9FZTnzTaOs5ssbwiEVKkFaaF9Qchy7DG4ci44DoWu+PeOk+wNFihtqVQpL57x2OecmRNfLAItg/0gkZmUM0UiRQiJSDQhMckgg1yk0xTiLBgFJS8Ad1oQlZW4vuWm9YHF4tACdyAZGYvWWijdwwPmpW5qw++/DtswIq61kZgP9i8uR0HNLZ7owAb7i0epX4VkeA4Gt86XmB5jdPe1X8tKtAXiYnoZ/DRUHg2ZvY9HmMEiD4eMArhzUEpAHIqbBkZBwUvJXWXvVxEkLU9Lsw5c69L1RAt+1+gfeDON/T4FyEwMIqyWbBCoD6sj7viZs61wrV3pVWkBTa+JBMVb4w43Y/2G09rpquxLHM/NsroybVGe9IoEqwM2+tE2CAJqT9Qjx8uRhTq7rr7PlyCPddlJMlA0leBmteLOWZ23zsNZBK0+36V2H96tNxjoNha8rnV5xWpb3eruPkRfjK8MLsbKVN8RZqOvyjEXnuoYO8HHxxg/6sJfudWe92c8Bov9nV9KfdPCRz9HkkQpnUUiTOMJDZNI8DDPZB7yPFaTJJlm05wED6OguW8ODW+atWLYKnbTesK9foNSrBO7U5p1A+eLhdW1O0B4tzDo8zAavJWRlwaZxuu53Thz7a87RqaUJpOYNYV1zGr8JDALSLBxzVOnzTG9N1+n32a7X0C7tN15N2y70Q/OexL7tFm7d9InBt/Fb/RdP7A7bJdF/5HtBlp/7rstrbdtt6X2P3GdyPNc5TALSS5EmKSQhVnM0xAmkaAqplGUqt9w3WteS16e3o13rKycVlrwrolrt0VZTKczAYImlE/xADEReUpAJhGhZBq/bLe9g9qrCfLDHL6BwEfx7c/e6wyW/jvZprCb2GDEtR22fTjfiA82pC/bsHfd77x+2Gu49a2EgmvD+rF6xpuPuP1lnz6HZMu8XKmuhUxpMBLnj3U17/KUqjPgVlwf+5t8D3unbht9q7Fod7zjidE32/l+Pj9/OlMNODbIwvwBTFW24H4iOoaPfw/JjEBK4yycTWP8PQCdhLmkNCT4uwDgoGL5Po/y5U9sEi208goAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=6e7c61c2c3c3a6105c5cb71ed4013195"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=6e7c61c2c3c3a6105c5cb71ed4013195^sys_idNOT IN3a7c61c2c3c3a6105c5cb71ed40131c9,727c61c2c3c3a6105c5cb71ed40131ca,7e7c61c2c3c3a6105c5cb71ed40131c7,fe7c61c2c3c3a6105c5cb71ed40131c8"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d2146942c383a6105c5cb71ed40131f1</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="For the Ride Request">6e7c61c2c3c3a6105c5cb71ed4013195</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 13:00:09</sys_created_on>
+        <sys_id>3a7c61c2c3c3a6105c5cb71ed40131c9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:10</sys_updated_on>
+        <ui_id>e565d70c-6505-4c64-a7c1-41e764786bc8</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBnWdC7tm+BgwAB0gZIglzaQFiRlM2WIlWRsuMa/vcu9bCN1kEbNMfezNnXzGoH3hHd2rq15lFfGiOWisw/P3tEKIfh7x1RUHEyJ1QrJqzQKu8Aj6xBti5wU17c86+cWs4QZcLUErZPZ4N0JSRr+DCjhgY7Wd6Q+e6XkGBYWwZQhjMa0jjK4igIomkSFllchBGLgUOMDSUUXGLqYiR3cdsh3qus7bZ2uLGNUMvhfTt0eRhB3TDHKgw8wl8sVwzZz0uQhnukAsXA6mZ7QBoO7E7JI7ASymI74pJfjPiBA6M0dYklR4mU98HDMx+W1sPlFVhAKi21bTOk0pUWlJt+OYyX0Eq7OMX6hLvaSe1LLBRyrNayrdSnfiPk0GD8Roi0Bknw2il11Acd5cNKb+5HltdCdVsZglJTkIcXWNxd0VrHZ0e45BU2yiuoa9xoXjd6Lbpi5FL5S4kPv5R6g0PdzflAHXEfFwv+NeJXHfwEjXAqPmIbLO5pFmAEzbv7xHa4Jk72HjFbs5BgzFEkbjf/3jqKveRBXN7vx5XQRtT2Eiev+aBj7/1+7ieXvtslLImmZZpNZkWRTpKsCCdFyKYTiKc0yD4kYZzEPrJFvSBzY8Hy/f5LGwQx3vZrHnmvtm9z1wzSMg2D9Ly7kuycu8746o2Wiv5gKfc9/9JRQRD8t9Q/W0qYvDfCoK0b/o6Oenb26Wcedk2FQWqPDrsZ/2dcYIvHJegptNHNNyfqiO1/AhxJTIyxBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1e146942c383a6105c5cb71ed40131f2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="For the Ride Request">6e7c61c2c3c3a6105c5cb71ed4013195</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <parent_ui_id>e565d70c-6505-4c64-a7c1-41e764786bc8</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 13:00:10</sys_created_on>
+        <sys_id>727c61c2c3c3a6105c5cb71ed40131ca</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:10</sys_updated_on>
+        <ui_id>1f929663-3936-4d22-bd17-15a05f751ab6</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">92146942c383a6105c5cb71ed40131c8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="For the Ride Request">6e7c61c2c3c3a6105c5cb71ed4013195</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 13:00:09</sys_created_on>
+        <sys_id>7e7c61c2c3c3a6105c5cb71ed40131c7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:09</sys_updated_on>
+        <ui_id>282ce0f2-7462-43c3-ac13-133ad6a68127</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBnWdC7tm+GgwAB0gZoglzaQFiRlE2UElWSsuMa/vcu9bCN1kEbNMfezNnX7GgH3hPV2qa15lEtjBGrmsy/PHtE1A7D33tSQ8XJnFBVM2GFqvMO8MgGZOsCt+XVomm02nCGKBOmkbB7uhikayGZ5sOMBjR2slyT+f6XkGBYWwZQhjMa0jjK4igIomkSFllchBGLgUOMDSUUXGLqciR3ddch3qus7a5xuLFa1KvhfTd0eRhBpZljFQYe4S+W1wzZz0uQhnukgpqBVXp3RDQHdl/LE7AWtcV2xCW/GPEDB0Zp6hJLjitS3gePz3wQrYfLa7CAVFpqWz2k0rUSlJteHMZLaKVdnmN9wn3jVu1LLBRyrFayrepPvSLk2GD8Roi0Bknwxm3qqA97lA9rtf08srwRdafKEJSKgjy+wKJ2RWsdnz3hklfYKK+gaVDR3B2A6IqRS+WvJD78UqotDnU35wN1xH0UFvwbxK87+Am0cFt8xDZY3NMswAiad/eJ7VAmTg4eMTuzlGDMaUlUN//eOor9ysNyea+PK6FaNHaBkzd82OPg/X7uZ5e+3ycsiaZlmk1mRZFOkqwIJ0XIphOIpzTIPiRhnMQ+dAcPMjcWLD8cvrZBEDN41SPv1fZt7ppBWqZhkF52V5JdctcFX73RUtEfLOW+5186KgiC/5b6Z0sJk/dGGHbrhr+jo56dffqZR62pMEjt0WG34/+MC+zwuAQ9h7ZKf3NLnbDDT4bcN8SxBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">da146942c383a6105c5cb71ed40131f0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="For the Ride Request">6e7c61c2c3c3a6105c5cb71ed4013195</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>282ce0f2-7462-43c3-ac13-133ad6a68127</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 13:00:09</sys_created_on>
+        <sys_id>fe7c61c2c3c3a6105c5cb71ed40131c8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:09</sys_updated_on>
+        <ui_id>e5c1588e-e85e-49cd-8ae2-0c16718d97bb</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=6e7c61c2c3c3a6105c5cb71ed4013195"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=6e7c61c2c3c3a6105c5cb71ed4013195"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6e7c61c2c3c3a6105c5cb71ed4013195</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 13:00:09</sys_created_on>
+        <sys_id>327c61c2c3c3a6105c5cb71ed40131a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:09</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6e7c61c2c3c3a6105c5cb71ed4013195</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 13:00:09</sys_created_on>
+        <sys_id>f27c61c2c3c3a6105c5cb71ed40131c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:09</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_6e7c61c2c3c3a6105c5cb71ed4013195"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_6e7c61c2c3c3a6105c5cb71ed4013195"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>89a0ed4ac343a6105c5cb71ed401316e</sys_id>
+        <latest_snapshot>6e7c61c2c3c3a6105c5cb71ed4013195</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch2-03-20-2025_04-02-2025_0516.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=89a0ed4ac343a6105c5cb71ed401316e^sys_idNOT INcb7c61c2c3c3a6105c5cb71ed40131e8"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"cb7c61c2c3c3a6105c5cb71ed40131e8","name":"plan","plan_signature":null}}</plan>
+        <plan_id>89a0ed4ac343a6105c5cb71ed401316e</plan_id>
+        <snapshot>20ec2106c3c3a6105c5cb71ed4013165</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 13:00:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cb7c61c2c3c3a6105c5cb71ed40131e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:00:10</sys_updated_on>
+        <trigger display_value="">7a7c61c2c3c3a6105c5cb71ed40131e6</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=89a0ed4ac343a6105c5cb71ed401316e"/>
+</record_update>

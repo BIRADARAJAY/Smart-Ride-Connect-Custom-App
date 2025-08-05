@@ -8,38 +8,52 @@
         <controller_as>c</controller_as>
         <css>.card-container {
   display: flex;
-  flex_direction : row;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 24px;
+  padding: 20px;
   justify-content: flex-start;
 }
 
 .card {
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
   width: 320px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
- 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card:hover {
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.card h3 {
-  margin: 0 0 10px 0;
+.ride-id a {
   font-size: 20px;
-  color: #333;
+  font-weight: 600;
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-.card p {
-  margin: 6px 0;
-  color: #555;
+.ride-id a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.ride-info p {
+  margin: 8px 0;
   font-size: 15px;
+  color: #444;
+  line-height: 1.5;
 }
 
+.ride-info strong {
+  color: #222;
+}
 </css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -70,6 +84,7 @@
 		json.departing_location = grRide.getDisplayValue('departing_location');
 		json.departure_time = grRide.getDisplayValue('departure_time');
 		json.pickup_point = grRide.getDisplayValue('pickup_point');
+		json.vehicle_type = grRide.getDisplayValue('vehicle_type');
 		json.sys_id = grRide.getValue('sys_id');
 			data.rides.push(json);
 	}
@@ -82,25 +97,31 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-08-04 07:20:04</sys_created_on>
         <sys_id>98e40513c34722505c5cb71ed40131d9</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>Rides</sys_name>
         <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
         <sys_update_name>sp_widget_98e40513c34722505c5cb71ed40131d9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-04 08:14:53</sys_updated_on>
+        <sys_updated_on>2025-08-05 06:45:58</sys_updated_on>
         <template><![CDATA[<div class="card-container">
-<div  ng-repeat="key in data.rides">
-    <div class="card">
-      <h3><a href="?id=sc_cat_item&sys_id=ff401193c38722505c5cb71ed40131c5&ride_schedule={{key.sys_id}}">{{key.number}}</a></h3>
-      <p><strong>Ride Provider: </strong> {{key.ride_provider}}</p>
-      <p><strong>Departure Location: </strong> {{key.departing_location}}</p>
-      <p><strong>Departure Time: </strong> {{key.departure_time}}</p>
-    <p><strong>Pickup Point: </strong> {{key.pickup_point}}</p>     
+  <div class="card" ng-repeat="key in data.rides">
+    <h3 class="ride-id">
+      <a href="?id=sc_cat_item&sys_id=ff401193c38722505c5cb71ed40131c5&ride_schedule={{key.sys_id}}">
+        {{key.number}}
+      </a>
+    </h3>
+    <div class="ride-info">
+      <p><strong>Ride Provider:</strong> {{key.ride_provider}}</p>
+      <p><strong>Departure Location:</strong> {{key.departing_location}}</p>
+      <p><strong>Departure Time:</strong> {{key.departure_time}}</p>
+      <p><strong>Vehicle Type:</strong> {{key.vehicle_type}}</p>
+      <p><strong>Pickup Point:</strong> {{key.pickup_point}}</p>
     </div>
+  </div>
 </div>
-</div>
+
 
 ]]></template>
     </sp_widget>

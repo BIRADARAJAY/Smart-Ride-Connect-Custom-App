@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color>#3f73aa</background_color>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Ride Index - Container 6</name>
+        <order>6</order>
+        <semantic_tag/>
+        <sp_page display_value="ride_index">ed11dadec34b2a105c5cb71ed401315c</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 08:01:09</sys_created_on>
+        <sys_id>63f79ee3c343e2505c5cb71ed40131fb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Ride Index - Container 6</sys_name>
+        <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name>sp_container_63f79ee3c343e2505c5cb71ed40131fb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 08:11:26</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</application>
+        <file_path/>
+        <instance_id>b7f75707dbf17510ae4c9027c596198e</instance_id>
+        <instance_name>dev186342</instance_name>
+        <name>sp_container_63f79ee3c343e2505c5cb71ed40131fb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color>#3f73aa</background_color><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Ride Index - Container 6</name><order>6</order><semantic_tag/><sp_page display_value="ride_index">ed11dadec34b2a105c5cb71ed401315c</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-05 08:01:09</sys_created_on><sys_id>63f79ee3c343e2505c5cb71ed40131fb</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Ride Index - Container 6</sys_name><sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package><sys_policy/><sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope><sys_update_name>sp_container_63f79ee3c343e2505c5cb71ed40131fb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-05 08:11:26</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>2090456855</payload_hash>
+        <record_name>Ride Index - Container 6</record_name>
+        <reverted_from/>
+        <source>f16bd21bc30362505c5cb71ed401311b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 08:11:26</sys_created_on>
+        <sys_id>1e5a9e2bc343e2505c5cb71ed40131fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19879490b360000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 08:11:26</sys_updated_on>
+        <type>Container</type>
+        <update_guid>125a9e2bb943e2505dff04c2d95f82fd</update_guid>
+        <update_guid_history>125a9e2bb943e2505dff04c2d95f82fd:2090456855,51f9522bc743e250b7702dafbbf7669d:-1836236072,c6685e276443e2507ef7a488ba755b4e:-1467961703,a3f79ee3f543e2509884d4a7bce74afd:122723881</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Ride Index - Container 6">48aa1a2bc343e2505c5cb71ed40131c0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 08:12:40</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>154c40a970fd41f488de2de37febcb04</sys_id>
+        <sys_metadata>63f79ee3c343e2505c5cb71ed40131fb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ride Index - Container 6</sys_name>
+        <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_scope_delete display_value="">0584cdcbaa9c45408100171205098c90</sys_scope_delete>
+        <sys_update_name>sp_container_63f79ee3c343e2505c5cb71ed40131fb</sys_update_name>
+        <sys_update_version display_value="sp_container_63f79ee3c343e2505c5cb71ed40131fb">1e5a9e2bc343e2505c5cb71ed40131fd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 08:12:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

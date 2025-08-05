@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function(spModal) {
+  /* widget controller */
+  var c = this;
+	
+	c.cancel_reason='';
+	c.cancel = function(sysID){
+		spModal.open({
+			title:"Cancel Ticket",
+			message:"Please provide reason for cancellation",
+			input:true,
+			value:c.cancel_reason
+		}).then(function(cancel_reason){
+			c.data.cancelReason = cancel_reason;
+			c.data.SysID = sysID;
+			c.server.update().then(function() {
+			alert("Request Cancelled");
+			});
+		})
+	}
+	
+	
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #3b73aa;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .ride-card {
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: 0 0 0 1px #ccc;
+      overflow: hidden;
+    }
+
+    .ride-header {
+      background-color: #428bca;
+      color: #fff;
+      padding: 12px 16px;
+      font-size: 16px;
+      font-weight: bold;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .ride-body {
+      padding: 16px;
+    }
+
+    .ride-id {
+      font-size: 14px;
+      color: #428bca;
+      margin-bottom: 4px;
+    }
+
+    .ride-requestor {
+      font-size: 13px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    .toggle-label {
+      font-size: 13px;
+      color: #428bca;
+      cursor: pointer;
+      user-select: none;
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+
+    .toggle-label:hover {
+      text-decoration: underline;
+    }
+
+    .ride-details {
+      display: none;
+      animation: fadeIn 0.3s ease;
+      margin-top: 10px;
+    }
+
+    input[type="checkbox"]:checked ~ .ride-details {
+      display: block;
+    }
+
+    .ride-details p {
+      font-size: 13px;
+      margin: 6px 0;
+    }
+
+    .ride-details .label {
+      font-weight: bold;
+      display: inline-block;
+      width: 140px;
+      color: #2c3e50;
+    }
+
+    .ride-actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .ride-actions button {
+      flex: 1;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn-cancel {
+      border: 1px solid #999;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .btn-cancel:hover {
+      background-color: #eee;
+    }
+
+    .btn-join {
+      border: none;
+      background-color: #428bca;
+      color: white;
+    }
+
+    .btn-join:hover {
+      background-color: #3071a9;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>my_rides</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>My Rides</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+	if (input && input.cancelReason && input.SysID) {
+		var grRRQ = new GlideRecord('x_1633452_smrt_ri_ride_requests');
+		if(grRRQ.get(input.SysID)){
+			grRRQ.state = 4;
+			grRRQ.cancellation_reason = input.cancelReason;
+			grRRQ.update();			
+		}
+	}
+	
+	data.rides = [];
+	var grRide = new GlideRecord('x_1633452_smrt_ri_ride_requests');
+	grRide.addQuery("ride_requestor",gs.getUserID());
+	grRide.addEncodedQuery("state!=4")
+  grRide.query();
+	while(grRide.next()){
+		var json = {}
+		json.number = grRide.getDisplayValue('number');
+		json.selected_seat = grRide.getDisplayValue('selected_seat');
+		json.ride_provider = grRide.getDisplayValue('ride_schedule.ride_provider');
+		json.departing_location = grRide.getDisplayValue('ride_schedule.departing_location');
+		json.departure_time = grRide.getDisplayValue('ride_schedule.departure_time');
+		json.pickup_point = grRide.getDisplayValue('ride_schedule.pickup_point');
+		json.vehicle_type = grRide.getDisplayValue('ride_schedule.vehicle_type');
+		json.sys_id = grRide.getValue('sys_id');
+			data.rides.push(json);
+	}
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 07:13:50</sys_created_on>
+        <sys_id>760b4ae7c3cfa2505c5cb71ed401311c</sys_id>
+        <sys_mod_count>51</sys_mod_count>
+        <sys_name>My Rides</sys_name>
+        <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name>sp_widget_760b4ae7c3cfa2505c5cb71ed401311c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 10:26:11</sys_updated_on>
+        <template><![CDATA[  <div class="ride-card">
+    <div class="ride-header">My Rides</div>
+    <div ng-repeat="key in data.rides" class="ride-body">
+      <a href="?id=ticket&is_new_order=true&table=x_1633452_smrt_ri_ride_requests&sys_id={{key.sys_id}}"><div class="ride-id">{{key.number}}</div></a>
+      <div class="ride-requestor">Provider: {{key.ride_provider}}</div>
+
+      <input type="checkbox" id="rideToggle">
+      <label for="rideToggle" class="toggle-label">▲ Ride Details</label>
+
+      <div class="ride-details">
+        <p><span class="label">From:</span> {{key.departing_location}}</p>
+        <p><span class="label">Pickup Point:</span> {{key.pickup_point}}</p>
+        <p><span class="label">Departure Time:</span> {{key.departure_time}}</p>
+        <p><span class="label">Selected Seat:</span> {{key.selected_seat}}</p>
+      </div>
+       <div class="ride-actions">
+          <button class="btn-cancel" ng-click="c.cancel(key.sys_id)">Cancel</button>
+          <button class="btn-join">Download Ticket</button>
+        </div>
+    </div>
+  </div>]]></template>
+    </sp_widget>
+</record_update>

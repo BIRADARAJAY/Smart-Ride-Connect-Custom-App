@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function($scope) {
+        <client_script><![CDATA[api.controller=function($scope,spUtil) {
   /* widget controller */
   var c = this;
+	
+	
+	$scope.seatSelected = function(seatId) {
+		$scope.page.g_form.setValue("selected_seat", seatId);		
+	};
+	
 	
 
 
@@ -93,21 +99,21 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-08-04 08:36:24</sys_created_on>
         <sys_id>04369157c3c722505c5cb71ed4013136</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>52</sys_mod_count>
         <sys_name>Select Seat</sys_name>
         <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
         <sys_update_name>sp_widget_04369157c3c722505c5cb71ed4013136</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-04 11:45:37</sys_updated_on>
+        <sys_updated_on>2025-08-05 06:50:29</sys_updated_on>
         <template><![CDATA[ 
 <div class="car-layout" ng-if="data.vehicle_type == 3">
     <div class="title">4-Seater Vehicle</div>
 
     <div class="row">
       <div class="seat">
-      <input type="checkbox" id="seat1" ng-model="selectedSeat" ng-true-value="'seat1'" ng-false-value="''"   >
+      <input type="checkbox" id="seat1" ng-model="selectedSeat" ng-true-value="'seat1'" ng-false-value="''"  ng-change="seatSelected('Front')" >
         <label for="seat1">Front</label>
       </div>
       <div class="seat">
@@ -118,11 +124,11 @@
 
     <div class="row">
       <div class="seat">
-        <input type="checkbox" id="seat3" ng-model="selectedSeat" ng-true-value="'seat3'" ng-false-value="''">
+        <input type="checkbox" id="seat3" ng-model="selectedSeat" ng-true-value="'seat3'" ng-false-value="''" ng-change="seatSelected('Rear Left')">
         <label for="seat3">Rear Left</label>
       </div>
       <div class="seat">
-        <input type="checkbox" id="seat5" ng-model="selectedSeat" ng-true-value="'seat5'" ng-false-value="''">
+        <input type="checkbox" id="seat5" ng-model="selectedSeat" ng-true-value="'seat5'" ng-false-value="''" ng-change="seatSelected('Rear Right')">
         <label for="seat5">Rear Right</label>
       </div>
     </div>
@@ -132,7 +138,7 @@
 
     <div class="row">
       <div class="seat">
-        <input type="checkbox" id="seat1" ng-model="selectedSeat" ng-true-value="'seat1'" ng-false-value="''">
+        <input type="checkbox" id="seat1" ng-model="selectedSeat" ng-true-value="'seat1'" ng-false-value="''" ng-change="seatSelected('Front')">
         <label for="seat1">Front</label>
       </div>
       <div class="seat">
@@ -143,15 +149,15 @@
 
     <div class="row">
       <div class="seat">
-        <input type="checkbox" id="seat3" ng-model="selectedSeat" ng-true-value="'seat3'" ng-false-value="''">
+        <input type="checkbox" id="seat3" ng-model="selectedSeat" ng-true-value="'seat3'" ng-false-value="''" ng-change="seatSelected('Rear Left')">
         <label for="seat3">Rear Left</label>
       </div>
       <div class="seat">
-        <input type="checkbox" id="seat4" ng-model="selectedSeat" ng-true-value="'seat4'" ng-false-value="''">
+        <input type="checkbox" id="seat4" ng-model="selectedSeat" ng-true-value="'seat4'" ng-false-value="''" ng-change="seatSelected('Rear Middle')">
         <label for="seat4">Rear Middle</label>
       </div>
       <div class="seat">
-        <input type="checkbox" id="seat5" ng-model="selectedSeat" ng-true-value="'seat5'" ng-false-value="''">
+        <input type="checkbox" id="seat5" ng-model="selectedSeat" ng-true-value="'seat5'" ng-false-value="''" ng-change="seatSelected('Rear Right')">
         <label for="seat5">Rear Right</label>
       </div>
     </div>
@@ -163,7 +169,7 @@
 
     <div class="row">
       <div class="seat">
-        <input type="checkbox" id="seat6" ng-model="selectedSeat" ng-true-value="'seat6'" ng-false-value="''">
+        <input type="checkbox" id="seat6" ng-model="selectedSeat" ng-true-value="'seat6'" ng-false-value="''" ng-change="seatSelected('Front')">
         <label for="seat6">Front</label>
       </div>
       <div class="seat">
@@ -174,26 +180,26 @@
 
     <div class="row">
       <div class="seat">
-        <input type="checkbox" id="seat8" ng-model="selectedSeat" ng-true-value="'seat8'" ng-false-value="''" >
+        <input type="checkbox" id="seat8" ng-model="selectedSeat" ng-true-value="'seat8'" ng-false-value="''" ng-change="seatSelected('Mid Left')">
         <label for="seat8">Mid Left</label>
       </div>
       <div class="seat">
-        <input type="checkbox" id="seat9" ng-model="selectedSeat" ng-true-value="'seat9'" ng-false-value="''">
+        <input type="checkbox" id="seat9" ng-model="selectedSeat" ng-true-value="'seat9'" ng-false-value="''" ng-change="seatSelected('Mid Center')">
         <label for="seat9">Mid Center</label>
       </div>
       <div class="seat">
-        <input type="checkbox" id="seat10" ng-model="selectedSeat" ng-true-value="'seat10'" ng-false-value="''">
+        <input type="checkbox" id="seat10" ng-model="selectedSeat" ng-true-value="'seat10'" ng-false-value="''" ng-change="seatSelected('Mid Right')">
         <label for="seat10">Mid Right</label>
       </div>
     </div>
 
     <div class="row">
       <div class="seat">
-        <input type="checkbox" id="seat11" ng-model="selectedSeat" ng-true-value="'seat11'" ng-false-value="''">
+        <input type="checkbox" id="seat11" ng-model="selectedSeat" ng-true-value="'seat11'" ng-false-value="''" ng-change="seatSelected('Rear Left')">
         <label for="seat11">Rear Left</label>
       </div>
       <div class="seat">
-        <input type="checkbox" id="seat12" ng-model="selectedSeat" ng-true-value="'seat12'" ng-false-value="''">
+        <input type="checkbox" id="seat12" ng-model="selectedSeat" ng-true-value="'seat12'" ng-false-value="''" ng-change="seatSelected('Rear Right')">
         <label for="seat12">Rear Right</label>
       </div>
     </div>

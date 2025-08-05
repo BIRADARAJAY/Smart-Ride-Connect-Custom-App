@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="813b890ec38f66105c5cb71ed4013177" extends="task" label="Ride Requests" max_length="40" name="x_1633452_smrt_ri_ride_requests" type="collection">
         <element label="Ride Schedule" max_length="32" name="ride_schedule" reference="x_1633452_smrt_ri_ride_schedules" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Cancellation Reason" max_length="4000" name="cancellation_reason" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Selected Seat" max_length="40" name="selected_seat" type="string"/>
         <element label="Ride Requestor" max_length="32" name="ride_requestor" reference="sys_user" type="reference"/>
     </element>
 </database>

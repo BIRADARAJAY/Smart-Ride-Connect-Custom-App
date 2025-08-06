@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($rootScope,$scope) {
+  /* widget controller */
+  var c = this;
+	
+	 $scope.dateEnter = function(dateValue) {
+		 $rootScope.$broadcast("dateSelect",dateValue);
+  };
+	
+	
+	$scope.location = {
+        "name": "Location"
+    };
+	
+	$scope.$on("field.change", function(evt, parms) {
+		if (parms.field.name.toString() == "Location") {
+            c.data.group = parms.newValue.toString();
+							$rootScope.$broadcast("loc",c.data.group);
+						
+        }
+	});
+	
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.ride-form {
+  padding: 20px;
+  background-color: #f5f7f9;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.form-row-horizontal {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 250px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+sn-record-picker {
+  display: block;
+ 	width: 300px
+  height: 50px;
+  box-sizing: border-box;
+}
+
+div.select2-container .select2-choice{
+  width: 300px !important;
+}
+
+sn-record-picker .select2-container {
+  height: 50px !important;
+  font-size: 1rem;
+}
+
+.apply-button {
+  align-self: flex-end;
+}
+
+sn-record-picker .select2-container {
+  height: 50px !important;
+  font-size: 1rem;
+}
+
+.apply-button button {
+  height: 40px;
+  padding: 0 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.apply-button button:hover {
+  background-color: #0056b3;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>filter_ride</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Filter Ride</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 12:04:37</sys_created_on>
+        <sys_id>7e3f476bc30be2505c5cb71ed401310a</sys_id>
+        <sys_mod_count>49</sys_mod_count>
+        <sys_name>Filter Ride</sys_name>
+        <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name>sp_widget_7e3f476bc30be2505c5cb71ed401310a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-06 07:39:01</sys_updated_on>
+        <template><![CDATA[<div class="ride-form">
+  <div class="form-row-horizontal">
+    <div class="form-group">
+      <label for="rideDate">Departure Time</label>
+      <input type="date" id="rideDate" name="rideDate" class="form-input" ng-model="data.ride_date" ng-change="dateEnter(data.ride_date)">
+    </div>
+
+    <div class="form-group" id="rec_pick">
+      <label for="rideLocation">Departure Location</label>
+      <sn-record-picker 
+        field="location" 
+        table="'cmn_location'" 
+        display-field="'name'" 
+        value-field="'sys_id'" 
+        search-fields="'name'" 
+        page-size="10">
+      </sn-record-picker>
+    </div>
+  </div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

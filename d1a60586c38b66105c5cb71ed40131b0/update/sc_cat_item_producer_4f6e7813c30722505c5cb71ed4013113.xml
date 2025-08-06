@@ -89,14 +89,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-08-04 06:52:35</sys_created_on>
         <sys_id>4f6e7813c30722505c5cb71ed4013113</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name>Create Ride Schedule</sys_name>
         <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
         <sys_update_name>sc_cat_item_producer_4f6e7813c30722505c5cb71ed4013113</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-08-04 07:16:02</sys_updated_on>
+        <sys_updated_on>2025-08-06 07:52:26</sys_updated_on>
         <table_name>x_1633452_smrt_ri_ride_schedules</table_name>
         <taxonomy_topic/>
         <template/>
@@ -104,7 +104,7 @@
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>34</version>
+        <version>38</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>

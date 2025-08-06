@@ -1,9 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function() {
+        <client_script><![CDATA[api.controller=function($rootScope) {
   /* widget controller */
   var c = this;
+	
+	$rootScope.$on('dateSelect',function(event,data){	
+		var selectedDate = data;
+		var dates = selectedDate.toString();
+		var parts = dates.split(" ");
+		var monthMap = {
+  			Jan: "01", Feb: "02", Mar: "03", Apr: "04",
+  			May: "05", Jun: "06", Jul: "07", Aug: "08",
+  			Sep: "09", Oct: "10", Nov: "11", Dec: "12"
+		};
+		var day = parts[2];
+		var month = monthMap[parts[1]];
+		var year = parts[3];
+		var dateStr = year + "-" + month + "-" + day;
+		var query = "departure_timeON" + dateStr +
+        "@javascript:gs.dateGenerate('" + dateStr + "','start')" +
+        "@javascript:gs.dateGenerate('" + dateStr + "','end')"; 
+		c.data.query=query;
+     c.server.update().then(function(){
+         
+      });
+	});
+	
+	$rootScope.$on('loc',function(event,data){
+		 c.data.location=data;
+     c.server.update().then(function(){
+         
+      });
+	});
+	
+	
+	
+	
 };]]></client_script>
         <controller_as>c</controller_as>
         <css>.card-container {
@@ -74,8 +107,15 @@
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
 	
+	
 	data.rides = [];
 	var grRide = new GlideRecord('x_1633452_smrt_ri_ride_schedules');
+	if(input && input.location){
+		grRide.addQuery("departing_location",input.location);
+	}
+	if(input && input.query){
+		grRide.addEncodedQuery(input.query);
+	}
   grRide.query();
 	while(grRide.next()){
 		var json = {}
@@ -86,7 +126,7 @@
 		json.pickup_point = grRide.getDisplayValue('pickup_point');
 		json.vehicle_type = grRide.getDisplayValue('vehicle_type');
 		json.sys_id = grRide.getValue('sys_id');
-			data.rides.push(json);
+		data.rides.push(json);
 	}
 	
 	
@@ -97,14 +137,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-08-04 07:20:04</sys_created_on>
         <sys_id>98e40513c34722505c5cb71ed40131d9</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>51</sys_mod_count>
         <sys_name>Rides</sys_name>
         <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
         <sys_update_name>sp_widget_98e40513c34722505c5cb71ed40131d9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-05 06:45:58</sys_updated_on>
+        <sys_updated_on>2025-08-06 07:39:38</sys_updated_on>
         <template><![CDATA[<div class="card-container">
   <div class="card" ng-repeat="key in data.rides">
     <h3 class="ride-id">

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item">
+    <sp_rectangle_menu_item action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <color>default</color>
+        <condition/>
+        <display_1/>
+        <display_2/>
+        <display_date/>
+        <filter/>
+        <glyph>car</glyph>
+        <hint/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <label>My Rides</label>
+        <order>100</order>
+        <record_script/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <sp_page display_value="my_rd_page">f2cb94ccc3d3a6505c5cb71ed40131cb</sp_page>
+        <sp_rectangle_menu display_value="Smart Ride Menu">05e09408c393a6505c5cb71ed40131ae</sp_rectangle_menu>
+        <sp_rectangle_menu_item/>
+        <sys_class_name>sp_rectangle_menu_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-06 11:30:34</sys_created_on>
+        <sys_id>38611848c393a6505c5cb71ed401317f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>My Rides</sys_name>
+        <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name>sp_rectangle_menu_item_38611848c393a6505c5cb71ed401317f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-06 12:18:24</sys_updated_on>
+        <table/>
+        <type>page</type>
+        <url/>
+        <url_target/>
+    </sp_rectangle_menu_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=38611848c393a6505c5cb71ed401317f"/>
+</record_update>

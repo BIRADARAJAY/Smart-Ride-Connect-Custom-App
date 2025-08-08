@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Create Ride Schedule">4f6e7813c30722505c5cb71ed4013113</catalog_item>
+        <catalog_variable>IO:65dfb0d3c30722505c5cb71ed4013177</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message>Date should be today or in future</field_message>
+        <field_message_type>warning</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-07 06:08:00</sys_created_on>
+        <sys_id>da01d458c3172a505c5cb71ed40131cf</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>departure_time</sys_name>
+        <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_da01d458c3172a505c5cb71ed40131cf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-07 06:13:20</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Date form Today Only">ca2ec0d0c3172a505c5cb71ed4013187</ui_policy>
+        <value/>
+        <value_action>clear_value</value_action>
+        <variable>departure_time</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=da01d458c3172a505c5cb71ed40131cf"/>
+</record_update>

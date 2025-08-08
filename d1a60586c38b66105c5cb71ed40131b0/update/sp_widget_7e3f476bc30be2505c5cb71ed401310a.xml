@@ -10,14 +10,23 @@
   };
 	
 	
-	$scope.location = {
-        "name": "Location"
+	$scope.deplocation = {
+        "name": "DepLocation"
+    };
+	
+		$scope.deslocation = {
+        "name": "DesLocation"
     };
 	
 	$scope.$on("field.change", function(evt, parms) {
-		if (parms.field.name.toString() == "Location") {
-            c.data.group = parms.newValue.toString();
-							$rootScope.$broadcast("loc",c.data.group);
+		if (parms.field.name.toString() == "DepLocation") {
+            c.data.DepLocation = parms.newValue.toString();
+							$rootScope.$broadcast("loc1",c.data.DepLocation);
+						
+        }
+		if (parms.field.name.toString() == "DesLocation") {
+            c.data.DesLocation = parms.newValue.toString();
+							$rootScope.$broadcast("loc2",c.data.DesLocation);
 						
         }
 	});
@@ -124,14 +133,14 @@ sn-record-picker .select2-container {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-08-05 12:04:37</sys_created_on>
         <sys_id>7e3f476bc30be2505c5cb71ed401310a</sys_id>
-        <sys_mod_count>49</sys_mod_count>
+        <sys_mod_count>51</sys_mod_count>
         <sys_name>Filter Ride</sys_name>
         <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
         <sys_update_name>sp_widget_7e3f476bc30be2505c5cb71ed401310a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-06 07:39:01</sys_updated_on>
+        <sys_updated_on>2025-08-07 06:20:42</sys_updated_on>
         <template><![CDATA[<div class="ride-form">
   <div class="form-row-horizontal">
     <div class="form-group">
@@ -142,7 +151,19 @@ sn-record-picker .select2-container {
     <div class="form-group" id="rec_pick">
       <label for="rideLocation">Departure Location</label>
       <sn-record-picker 
-        field="location" 
+        field="deplocation" 
+        table="'cmn_location'" 
+        display-field="'name'" 
+        value-field="'sys_id'" 
+        search-fields="'name'" 
+        page-size="10">
+      </sn-record-picker>
+    </div>
+    
+     <div class="form-group" id="rec_pick">
+      <label for="rideLocation">Destination Location</label>
+      <sn-record-picker 
+        field="deslocation" 
         table="'cmn_location'" 
         display-field="'name'" 
         value-field="'sys_id'" 

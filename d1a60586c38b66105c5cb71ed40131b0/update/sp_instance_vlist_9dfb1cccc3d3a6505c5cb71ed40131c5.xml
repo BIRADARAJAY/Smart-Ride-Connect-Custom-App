@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_vlist">
+    <sp_instance_vlist action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>primary</color>
+        <css/>
+        <display_field>number</display_field>
+        <field_list/>
+        <filter table="x_1633452_smrt_ri_ride_schedules">ride_providerDYNAMIC90d1921e5f510100a9ad2572f2b477fe<item endquery="false" field="ride_provider" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+        </filter>
+        <glyph/>
+        <id/>
+        <maximum_entries>10</maximum_entries>
+        <order>1</order>
+        <order_by/>
+        <order_direction>asc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">dfebd8ccc3d3a6505c5cb71ed40131ce</sp_column>
+        <sp_page display_value="form">ed5f8ec347730200ba13a5554ee49046</sp_page>
+        <sp_widget display_value="Simple List">5b255672cb03020000f8d856634c9c28</sp_widget>
+        <sys_class_name>sp_instance_vlist</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-06 12:16:12</sys_created_on>
+        <sys_id>9dfb1cccc3d3a6505c5cb71ed40131c5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name>sp_instance_vlist_9dfb1cccc3d3a6505c5cb71ed40131c5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-07 06:37:59</sys_updated_on>
+        <table>x_1633452_smrt_ri_ride_schedules</table>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"always_show": {
+		"value": "",
+		"displayValue": ""
+	},
+	"panel_body_height": {
+		"value": "",
+		"displayValue": ""
+	},
+	"image_field": {
+		"value": "",
+		"displayValue": ""
+	},
+	"secondary_fields": {
+		"value": "ride_provider,departing_location,departure_time,pickup_point,vehicle_type,available_seats",
+		"displayValue": "ride_provider,departing_location,departure_time,pickup_point,vehicle_type,available_seats"
+	},
+	"rounded_images": {
+		"value": "",
+		"displayValue": ""
+	},
+	"list_page": {
+		"value": "ed5f8ec347730200ba13a5554ee49046",
+		"displayValue": "form"
+	},
+	"hide_footer": {
+		"value": "",
+		"displayValue": ""
+	},
+	"view": {
+		"value": "",
+		"displayValue": ""
+	},
+	"disable_record_watcher": {
+		"value": "",
+		"displayValue": ""
+	},
+	"filter_acls": {
+		"value": "false",
+		"displayValue": "false"
+	}
+}]]></widget_parameters>
+    </sp_instance_vlist>
+    <sys_translated_text action="delete_multiple" query="documentkey=9dfb1cccc3d3a6505c5cb71ed40131c5"/>
+</record_update>

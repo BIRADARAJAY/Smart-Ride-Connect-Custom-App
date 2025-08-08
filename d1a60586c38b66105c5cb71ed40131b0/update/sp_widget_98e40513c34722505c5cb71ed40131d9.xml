@@ -27,13 +27,17 @@
       });
 	});
 	
-	$rootScope.$on('loc',function(event,data){
-		 c.data.location=data;
-     c.server.update().then(function(){
-         
+	$rootScope.$on('loc1',function(event,data){
+		 c.data.deplocation=data;
+     c.server.update().then(function(){      
       });
 	});
 	
+	$rootScope.$on('loc2',function(event,data){
+		 c.data.deslocation=data;
+     c.server.update().then(function(){
+      });
+	});
 	
 	
 	
@@ -93,7 +97,7 @@
         <description/>
         <docs/>
         <field_list/>
-        <has_preview>false</has_preview>
+        <has_preview>true</has_preview>
         <id>rides</id>
         <internal>false</internal>
         <link><![CDATA[function link(scope, element, attrs, controller) {
@@ -107,11 +111,29 @@
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
 	
+	var obj = {};
+	var grRRQ = new GlideRecord("x_1633452_smrt_ri_ride_requests");
+	grRRQ.addEncodedQuery("stateNOT IN3,4");
+	grRRQ.query();
+	while(grRRQ.next()){
+		var rideSchedule = grRRQ.getValue('ride_schedule');
+		if(obj[rideSchedule]){
+			obj[rideSchedule]++;
+		}else{
+			obj[rideSchedule]=1;
+		}
+	}
+	
+//gs.addInfoMessage("INFO"+JSON.stringify(obj));
+	
 	
 	data.rides = [];
 	var grRide = new GlideRecord('x_1633452_smrt_ri_ride_schedules');
-	if(input && input.location){
-		grRide.addQuery("departing_location",input.location);
+	if(input && input.deplocation){
+		grRide.addQuery("departing_location",input.deplocation);
+	}
+	if(input && input.deslocation){
+		grRide.addQuery("destination_location",input.deslocation);
 	}
 	if(input && input.query){
 		grRide.addEncodedQuery(input.query);
@@ -121,11 +143,14 @@
 		var json = {}
 		json.number = grRide.getDisplayValue('number');
 		json.ride_provider = grRide.getDisplayValue('ride_provider');
+		json.phone = grRide.getDisplayValue('ride_provider.mobile_phone');
 		json.departing_location = grRide.getDisplayValue('departing_location');
+		json.destination_location = grRide.getDisplayValue('destination_location');
 		json.departure_time = grRide.getDisplayValue('departure_time');
 		json.pickup_point = grRide.getDisplayValue('pickup_point');
 		json.vehicle_type = grRide.getDisplayValue('vehicle_type');
 		json.sys_id = grRide.getValue('sys_id');
+	if((obj[grRide.getValue('sys_id')]<grRide.getValue('available_seats'))||(!obj[grRide.getValue('sys_id')]))
 		data.rides.push(json);
 	}
 	
@@ -137,14 +162,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-08-04 07:20:04</sys_created_on>
         <sys_id>98e40513c34722505c5cb71ed40131d9</sys_id>
-        <sys_mod_count>51</sys_mod_count>
+        <sys_mod_count>75</sys_mod_count>
         <sys_name>Rides</sys_name>
         <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
         <sys_update_name>sp_widget_98e40513c34722505c5cb71ed40131d9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-06 07:39:38</sys_updated_on>
+        <sys_updated_on>2025-08-07 06:25:11</sys_updated_on>
         <template><![CDATA[<div class="card-container">
   <div class="card" ng-repeat="key in data.rides">
     <h3 class="ride-id">
@@ -154,7 +179,9 @@
     </h3>
     <div class="ride-info">
       <p><strong>Ride Provider:</strong> {{key.ride_provider}}</p>
+      <p><strong>Phone:</strong> {{key.phone}}</p>
       <p><strong>Departure Location:</strong> {{key.departing_location}}</p>
+      <p><strong>Destination Location:</strong> {{key.destination_location}}</p>
       <p><strong>Departure Time:</strong> {{key.departure_time}}</p>
       <p><strong>Vehicle Type:</strong> {{key.vehicle_type}}</p>
       <p><strong>Pickup Point:</strong> {{key.pickup_point}}</p>

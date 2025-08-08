@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_ui_rule">
+    <sys_sg_ui_rule action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition>text_decorator_01=1</condition>
+        <name>Highlight number to yellow when state is scheduled</name>
+        <order>10</order>
+        <parent_id>7bd74d82c38f66105c5cb71ed40131c9</parent_id>
+        <parent_table>sys_sg_view_config</parent_table>
+        <reverse_if_false>false</reverse_if_false>
+        <sys_class_name>sys_sg_ui_rule</sys_class_name>
+        <sys_created_by>Ajay.Biradar</sys_created_by>
+        <sys_created_on>2025-08-06 19:00:12</sys_created_on>
+        <sys_id>d768b944479bea104382b6bf016d43f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Highlight number to yellow when state is scheduled</sys_name>
+        <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name>sys_sg_ui_rule_d768b944479bea104382b6bf016d43f2</sys_update_name>
+        <sys_updated_by>Ajay.Biradar</sys_updated_by>
+        <sys_updated_on>2025-08-06 19:00:12</sys_updated_on>
+        <trigger>fd680bd85b431010da168d8fa881c7c8</trigger>
+        <user_action_id/>
+    </sys_sg_ui_rule>
+</record_update>

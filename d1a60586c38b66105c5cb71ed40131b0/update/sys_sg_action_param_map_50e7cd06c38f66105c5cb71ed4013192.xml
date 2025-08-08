@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_action_param_map">
     <sys_sg_action_param_map action="INSERT_OR_UPDATE">
-        <button display_value="Edit Button (Ride Schedules)">5ce7cd06c38f66105c5cb71ed4013180</button>
-        <item_parameter display_value="Ride Schedules business_service">14e7cd06c38f66105c5cb71ed4013180</item_parameter>
+        <button display_value="Edit Ride Schedule">5ce7cd06c38f66105c5cb71ed4013180</button>
+        <item_parameter/>
         <sys_class_name>sys_sg_action_param_map</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-31 10:20:15</sys_created_on>
         <sys_id>50e7cd06c38f66105c5cb71ed4013192</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>14e7cd06c38f66105c5cb71ed4013180</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
         <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
         <sys_update_name>sys_sg_action_param_map_50e7cd06c38f66105c5cb71ed4013192</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-31 10:20:15</sys_updated_on>
+        <sys_updated_by>Ajay.Biradar</sys_updated_by>
+        <sys_updated_on>2025-08-06 19:52:59</sys_updated_on>
         <ui_parameter display_value="Service">98e7cd06c38f66105c5cb71ed4013183</ui_parameter>
     </sys_sg_action_param_map>
 </record_update>

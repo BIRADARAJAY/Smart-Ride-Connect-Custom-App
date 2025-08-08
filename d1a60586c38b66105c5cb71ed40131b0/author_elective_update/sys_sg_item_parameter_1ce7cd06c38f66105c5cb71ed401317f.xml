@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_parameter">
+    <sys_sg_item_parameter action="DELETE">
+        <default_value/>
+        <name>Ride Schedules location</name>
+        <parent>18e7cd06c38f66105c5cb71ed401317d</parent>
+        <parent_table>sys_sg_write_back_action_item</parent_table>
+        <sys_class_name>sys_sg_item_parameter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 10:20:14</sys_created_on>
+        <sys_id>1ce7cd06c38f66105c5cb71ed401317f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ride Schedules location</sys_name>
+        <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name>sys_sg_item_parameter_1ce7cd06c38f66105c5cb71ed401317f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 10:20:14</sys_updated_on>
+        <type>string</type>
+    </sys_sg_item_parameter>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</application>
+        <file_path/>
+        <instance_id>164476d393282210611eddd548373cd5</instance_id>
+        <instance_name>dev313135</instance_name>
+        <name>sys_sg_item_parameter_1ce7cd06c38f66105c5cb71ed401317f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_parameter">
+    <sys_sg_item_parameter action="INSERT_OR_UPDATE">
+        <default_value/>
+        <name>Ride Schedules location</name>
+        <parent>18e7cd06c38f66105c5cb71ed401317d</parent>
+        <parent_table>sys_sg_write_back_action_item</parent_table>
+        <sys_class_name>sys_sg_item_parameter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 10:20:14</sys_created_on>
+        <sys_id>1ce7cd06c38f66105c5cb71ed401317f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ride Schedules location</sys_name>
+        <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name>sys_sg_item_parameter_1ce7cd06c38f66105c5cb71ed401317f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 10:20:14</sys_updated_on>
+        <type>string</type>
+    </sys_sg_item_parameter>
+</record_update>]]></payload>
+        <payload_hash>1698906414</payload_hash>
+        <record_name>Ride Schedules location</record_name>
+        <reverted_from/>
+        <source>572e525f47cbe6104382b6bf016d4316</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>current</state>
+        <sys_created_by>Ajay.Biradar</sys_created_by>
+        <sys_created_on>2025-08-04 13:50:07</sys_created_on>
+        <sys_id>694eda5f47cbe6104382b6bf016d43e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1987558bf970000001</sys_recorded_at>
+        <sys_updated_by>Ajay.Biradar</sys_updated_by>
+        <sys_updated_on>2025-08-04 13:50:07</sys_updated_on>
+        <type>Data parameter</type>
+        <update_guid>294eda5f2dcbe610dd5bde77322898e8</update_guid>
+        <update_guid_history>294eda5f2dcbe610dd5bde77322898e8:1698906414</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-06 19:53:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_sg_item_parameter">sys_sg_item_parameter</sys_db_object>
+        <sys_id>237c71ed762849a89d7ca8232375e681</sys_id>
+        <sys_metadata>1ce7cd06c38f66105c5cb71ed401317f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ride Schedules location</sys_name>
+        <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_scope_delete display_value="">0584cdcbaa9c45408100171205098c90</sys_scope_delete>
+        <sys_update_name>sys_sg_item_parameter_1ce7cd06c38f66105c5cb71ed401317f</sys_update_name>
+        <sys_update_version display_value="sys_sg_item_parameter_1ce7cd06c38f66105c5cb71ed401317f">694eda5f47cbe6104382b6bf016d43e8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-06 19:53:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

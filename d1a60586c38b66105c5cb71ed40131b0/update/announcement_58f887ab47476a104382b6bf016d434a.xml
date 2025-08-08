@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="announcement">
+    <announcement action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <click_target/>
+        <details/>
+        <details_link_text/>
+        <details_page/>
+        <details_url/>
+        <dismiss_options>dismissible</dismiss_options>
+        <display_first>false</display_first>
+        <display_style display_value="Normal">704dedd6e7d4030075c2a117c2f6a91b</display_style>
+        <from>2025-08-04 11:35:37</from>
+        <glyph>car</glyph>
+        <glyph_alt_text/>
+        <name>Smart Ride Connect </name>
+        <public>true</public>
+        <roles/>
+        <show_for_unauthenticated_users_only>false</show_for_unauthenticated_users_only>
+        <summary>Smart Ride Connect Application is in development phase, stay tuned.</summary>
+        <sys_class_name>announcement</sys_class_name>
+        <sys_created_by>Ajay.Biradar</sys_created_by>
+        <sys_created_on>2025-08-05 11:36:56</sys_created_on>
+        <sys_id>58f887ab47476a104382b6bf016d434a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Smart Ride Connect </sys_name>
+        <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name>announcement_58f887ab47476a104382b6bf016d434a</sys_update_name>
+        <sys_updated_by>Ajay.Biradar</sys_updated_by>
+        <sys_updated_on>2025-08-05 11:39:04</sys_updated_on>
+        <title>Smart Ride Connect Application is in development phase</title>
+        <to>2025-09-10 11:35:40</to>
+        <type>67eaf134e7a3320075c2a117c2f6a9d2,52fa79f8e763320075c2a117c2f6a991</type>
+    </announcement>
+    <sys_translated_text action="delete_multiple" query="documentkey=58f887ab47476a104382b6bf016d434a"/>
+</record_update>

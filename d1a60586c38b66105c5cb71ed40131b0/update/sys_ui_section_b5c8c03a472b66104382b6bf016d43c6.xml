@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="b5c8c03a472b66104382b6bf016d43c6" sys_domain="global" table="x_1633452_smrt_ri_ride_schedules" version="3" view="workspace-smart-ride-connect-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:24</sys_created_on>
+            <sys_id>7dc8c03a472b66104382b6bf016d43c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1633452_smrt_ri_ride_schedules" sys_domain="global" view="46b84cf6812b6610025e38f122d59e52">b5c8c03a472b66104382b6bf016d43c6</sys_ui_section>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ride_provider</element>
+            <position>1</position>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:24</sys_created_on>
+            <sys_id>79c8c03a472b66104382b6bf016d43c7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1633452_smrt_ri_ride_schedules" sys_domain="global" view="46b84cf6812b6610025e38f122d59e52">b5c8c03a472b66104382b6bf016d43c6</sys_ui_section>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>departure_time</element>
+            <position>2</position>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:24</sys_created_on>
+            <sys_id>f1c8c03a472b66104382b6bf016d43ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1633452_smrt_ri_ride_schedules" sys_domain="global" view="46b84cf6812b6610025e38f122d59e52">b5c8c03a472b66104382b6bf016d43c6</sys_ui_section>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>departing_location</element>
+            <position>3</position>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:24</sys_created_on>
+            <sys_id>fdc8c03a472b66104382b6bf016d43c7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1633452_smrt_ri_ride_schedules" sys_domain="global" view="46b84cf6812b6610025e38f122d59e52">b5c8c03a472b66104382b6bf016d43c6</sys_ui_section>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pickup_point</element>
+            <position>4</position>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:24</sys_created_on>
+            <sys_id>79c8c03a472b66104382b6bf016d43ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1633452_smrt_ri_ride_schedules" sys_domain="global" view="46b84cf6812b6610025e38f122d59e52">b5c8c03a472b66104382b6bf016d43c6</sys_ui_section>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:24</sys_created_on>
+            <sys_id>75c8c03a472b66104382b6bf016d43c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1633452_smrt_ri_ride_schedules" sys_domain="global" view="46b84cf6812b6610025e38f122d59e52">b5c8c03a472b66104382b6bf016d43c6</sys_ui_section>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:24</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>6</position>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:24</sys_created_on>
+            <sys_id>fdc8c03a472b66104382b6bf016d43ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1633452_smrt_ri_ride_schedules" sys_domain="global" view="46b84cf6812b6610025e38f122d59e52">b5c8c03a472b66104382b6bf016d43c6</sys_ui_section>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>destination_location</element>
+            <position>7</position>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:24</sys_created_on>
+            <sys_id>f9c8c03a472b66104382b6bf016d43c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1633452_smrt_ri_ride_schedules" sys_domain="global" view="46b84cf6812b6610025e38f122d59e52">b5c8c03a472b66104382b6bf016d43c6</sys_ui_section>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>drop_point</element>
+            <position>8</position>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:24</sys_created_on>
+            <sys_id>75c8c03a472b66104382b6bf016d43cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1633452_smrt_ri_ride_schedules" sys_domain="global" view="46b84cf6812b6610025e38f122d59e52">b5c8c03a472b66104382b6bf016d43c6</sys_ui_section>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vehicle_type</element>
+            <position>9</position>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:24</sys_created_on>
+            <sys_id>71c8c03a472b66104382b6bf016d43c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1633452_smrt_ri_ride_schedules" sys_domain="global" view="46b84cf6812b6610025e38f122d59e52">b5c8c03a472b66104382b6bf016d43c6</sys_ui_section>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>available_seats</element>
+            <position>10</position>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:24</sys_created_on>
+            <sys_id>f9c8c03a472b66104382b6bf016d43cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1633452_smrt_ri_ride_schedules" sys_domain="global" view="46b84cf6812b6610025e38f122d59e52">b5c8c03a472b66104382b6bf016d43c6</sys_ui_section>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>11</position>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:24</sys_created_on>
+            <sys_id>f5c8c03a472b66104382b6bf016d43c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1633452_smrt_ri_ride_schedules" sys_domain="global" view="46b84cf6812b6610025e38f122d59e52">b5c8c03a472b66104382b6bf016d43c6</sys_ui_section>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:24</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>instructions_for_requestors</element>
+            <position>12</position>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:24</sys_created_on>
+            <sys_id>71c8c03a472b66104382b6bf016d43cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1633452_smrt_ri_ride_schedules" sys_domain="global" view="46b84cf6812b6610025e38f122d59e52">b5c8c03a472b66104382b6bf016d43c6</sys_ui_section>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_1633452_smrt_ri_ride_schedules</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b5c8c03a472b66104382b6bf016d43c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1633452_smrt_ri_ride_schedules</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+            <sys_update_name>sys_ui_section_b5c8c03a472b66104382b6bf016d43c6</sys_update_name>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:24</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Workspace Smart Ride Connect 0" name="workspace-smart-ride-connect-0">46b84cf6812b6610025e38f122d59e52</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

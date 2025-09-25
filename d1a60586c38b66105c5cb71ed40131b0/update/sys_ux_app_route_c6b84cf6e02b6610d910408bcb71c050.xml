@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="Smart Ride Connect App Config">4eb84cf60d2b66102b4ad156a2a4d959</app_config>
+        <description/>
+        <extension_point/>
+        <fields>table</fields>
+        <icon/>
+        <name>Simple List</name>
+        <optional_parameters>listTitle,query,disableInlineEditing</optional_parameters>
+        <order>0</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>simplelist</route_type>
+        <screen_type display_value="Simple List">42b84cf6632b6610d904ab8ad57eef50</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>Ajay.Biradar</sys_created_by>
+        <sys_created_on>2025-08-27 10:11:09</sys_created_on>
+        <sys_id>c6b84cf6e02b6610d910408bcb71c050</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Simple List</sys_name>
+        <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name>sys_ux_app_route_c6b84cf6e02b6610d910408bcb71c050</sys_update_name>
+        <sys_updated_by>Ajay.Biradar</sys_updated_by>
+        <sys_updated_on>2025-08-27 10:11:09</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=c6b84cf6e02b6610d910408bcb71c050"/>
+</record_update>

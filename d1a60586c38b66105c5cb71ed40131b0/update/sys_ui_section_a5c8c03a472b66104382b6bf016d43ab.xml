@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="a5c8c03a472b66104382b6bf016d43ab" sys_domain="global" table="x_1633452_smrt_ri_ride_requests" version="3" view="workspace-smart-ride-connect-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:23</sys_created_on>
+            <sys_id>25c8c03a472b66104382b6bf016d43b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1633452_smrt_ri_ride_requests" sys_domain="global" view="46b84cf6812b6610025e38f122d59e52">a5c8c03a472b66104382b6bf016d43ab</sys_ui_section>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ride_requestor</element>
+            <position>1</position>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:23</sys_created_on>
+            <sys_id>2dc8c03a472b66104382b6bf016d43ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1633452_smrt_ri_ride_requests" sys_domain="global" view="46b84cf6812b6610025e38f122d59e52">a5c8c03a472b66104382b6bf016d43ab</sys_ui_section>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ride_schedule</element>
+            <position>2</position>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:23</sys_created_on>
+            <sys_id>2dc8c03a472b66104382b6bf016d43af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1633452_smrt_ri_ride_requests" sys_domain="global" view="46b84cf6812b6610025e38f122d59e52">a5c8c03a472b66104382b6bf016d43ab</sys_ui_section>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:23</sys_created_on>
+            <sys_id>a9c8c03a472b66104382b6bf016d43ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1633452_smrt_ri_ride_requests" sys_domain="global" view="46b84cf6812b6610025e38f122d59e52">a5c8c03a472b66104382b6bf016d43ab</sys_ui_section>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:23</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>4</position>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:23</sys_created_on>
+            <sys_id>a1c8c03a472b66104382b6bf016d43b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1633452_smrt_ri_ride_requests" sys_domain="global" view="46b84cf6812b6610025e38f122d59e52">a5c8c03a472b66104382b6bf016d43ab</sys_ui_section>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>parent</element>
+            <position>5</position>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:23</sys_created_on>
+            <sys_id>21c8c03a472b66104382b6bf016d43af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1633452_smrt_ri_ride_requests" sys_domain="global" view="46b84cf6812b6610025e38f122d59e52">a5c8c03a472b66104382b6bf016d43ab</sys_ui_section>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>selected_seat</element>
+            <position>6</position>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:23</sys_created_on>
+            <sys_id>29c8c03a472b66104382b6bf016d43b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1633452_smrt_ri_ride_requests" sys_domain="global" view="46b84cf6812b6610025e38f122d59e52">a5c8c03a472b66104382b6bf016d43ab</sys_ui_section>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>7</position>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:23</sys_created_on>
+            <sys_id>a5c8c03a472b66104382b6bf016d43af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1633452_smrt_ri_ride_requests" sys_domain="global" view="46b84cf6812b6610025e38f122d59e52">a5c8c03a472b66104382b6bf016d43ab</sys_ui_section>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:23</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cancellation_reason</element>
+            <position>8</position>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:23</sys_created_on>
+            <sys_id>adc8c03a472b66104382b6bf016d43b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1633452_smrt_ri_ride_requests" sys_domain="global" view="46b84cf6812b6610025e38f122d59e52">a5c8c03a472b66104382b6bf016d43ab</sys_ui_section>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_1633452_smrt_ri_ride_requests</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a5c8c03a472b66104382b6bf016d43ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1633452_smrt_ri_ride_requests</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+            <sys_update_name>sys_ui_section_a5c8c03a472b66104382b6bf016d43ab</sys_update_name>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:23</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Workspace Smart Ride Connect 0" name="workspace-smart-ride-connect-0">46b84cf6812b6610025e38f122d59e52</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

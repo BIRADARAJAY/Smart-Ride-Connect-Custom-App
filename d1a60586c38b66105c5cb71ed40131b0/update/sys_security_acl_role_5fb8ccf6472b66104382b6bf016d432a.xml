@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>Ajay.Biradar</sys_created_by>
+        <sys_created_on>2025-08-27 10:11:13</sys_created_on>
+        <sys_id>5fb8ccf6472b66104382b6bf016d432a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x.1633452.smart-ride-connect.*.x_1633452_smrt_ri.admin</sys_name>
+        <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_security_acl display_value="x.1633452.smart-ride-connect.*">cab84cf6692b6610e4faf32c4368a152</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_5fb8ccf6472b66104382b6bf016d432a</sys_update_name>
+        <sys_updated_by>Ajay.Biradar</sys_updated_by>
+        <sys_updated_on>2025-08-27 10:11:13</sys_updated_on>
+        <sys_user_role display_value="x_1633452_smrt_ri.admin" name="x_1633452_smrt_ri.admin">8bc6418ec34f66105c5cb71ed401312c</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

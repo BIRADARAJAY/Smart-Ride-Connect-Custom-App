@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme">
+    <m2m_app_config_theme action="INSERT_OR_UPDATE">
+        <applicability/>
+        <order>0</order>
+        <sys_class_name>m2m_app_config_theme</sys_class_name>
+        <sys_created_by>Ajay.Biradar</sys_created_by>
+        <sys_created_on>2025-08-27 10:11:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8eb84cf6432b661070ade556e8a3ad58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name>m2m_app_config_theme_8eb84cf6432b661070ade556e8a3ad58</sys_update_name>
+        <sys_updated_by>Ajay.Biradar</sys_updated_by>
+        <sys_updated_on>2025-08-27 10:11:09</sys_updated_on>
+        <theme display_value="Base Agent Workspace theme">c012213bc39b10101d590cf06e40dd32</theme>
+        <ux_app_configuration display_value="Smart Ride Connect App Config">4eb84cf60d2b66102b4ad156a2a4d959</ux_app_configuration>
+    </m2m_app_config_theme>
+</record_update>

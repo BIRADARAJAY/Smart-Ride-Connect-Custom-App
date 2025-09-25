@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description/>
+        <local_or_existing/>
+        <name>x.1633452.smart-ride-connect.*</name>
+        <operation display_value="read">read</operation>
+        <script><![CDATA[answer = gs.getSession().isLoggedIn();
+if (!answer) {
+    answer = gs.getProperty('glide.security.allow_unauth_roleless_acl', false);
+}]]></script>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>Ajay.Biradar</sys_created_by>
+        <sys_created_on>2025-08-27 10:11:09</sys_created_on>
+        <sys_id>cab84cf6692b6610e4faf32c4368a152</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x.1633452.smart-ride-connect.*</sys_name>
+        <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+        <sys_update_name>sys_security_acl_cab84cf6692b6610e4faf32c4368a152</sys_update_name>
+        <sys_updated_by>Ajay.Biradar</sys_updated_by>
+        <sys_updated_on>2025-08-27 10:11:09</sys_updated_on>
+        <type display_value="ux_route">b9eb8a1b873303002941b53046cb1234</type>
+    </sys_security_acl>
+</record_update>

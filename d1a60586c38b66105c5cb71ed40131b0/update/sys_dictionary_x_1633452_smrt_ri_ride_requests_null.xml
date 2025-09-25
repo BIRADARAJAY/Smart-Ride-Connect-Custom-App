@@ -56,11 +56,11 @@
         <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
-        <sys_update_name>sys_dictionary_x_1633452_smrt_ri_ride_requests_NULL</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-31 10:36:35</sys_updated_on>
+        <sys_update_name>sys_dictionary_x_1633452_smrt_ri_ride_requests_null</sys_update_name>
+        <sys_updated_by>Ajay.Biradar</sys_updated_by>
+        <sys_updated_on>2025-08-27 10:11:17</sys_updated_on>
         <table_reference>false</table_reference>
-        <text_index>false</text_index>
+        <text_index>true</text_index>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>

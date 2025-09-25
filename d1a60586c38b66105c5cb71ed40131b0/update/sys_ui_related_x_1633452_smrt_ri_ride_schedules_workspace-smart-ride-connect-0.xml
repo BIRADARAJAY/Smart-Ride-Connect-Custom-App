@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_1633452_smrt_ri_ride_schedules" version="2" view="workspace-smart-ride-connect-0">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Ride Schedules - Workspace Smart Ride Connect 0" name="x_1633452_smrt_ri_ride_schedules" related_list="NULL" sys_domain="global" view="46b84cf6812b6610025e38f122d59e52">25c8c03a472b66104382b6bf016d43c3</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_1633452_smrt_ri_ride_requests.ride_schedule</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:23</sys_created_on>
+            <sys_id>a5c8c03a472b66104382b6bf016d43d0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:23</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Ride Schedules - Workspace Smart Ride Connect 0</calculated_name>
+            <filter/>
+            <name>x_1633452_smrt_ri_ride_schedules</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>Ajay.Biradar</sys_created_by>
+            <sys_created_on>2025-08-27 10:11:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>25c8c03a472b66104382b6bf016d43c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Ride Schedules - Workspace Smart Ride Connect 0</sys_name>
+            <sys_package display_value="Smart Ride Connect" source="x_1633452_smrt_ri">d1a60586c38b66105c5cb71ed40131b0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Smart Ride Connect">d1a60586c38b66105c5cb71ed40131b0</sys_scope>
+            <sys_update_name>sys_ui_related_x_1633452_smrt_ri_ride_schedules_workspace-smart-ride-connect-0</sys_update_name>
+            <sys_updated_by>Ajay.Biradar</sys_updated_by>
+            <sys_updated_on>2025-08-27 10:11:23</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace Smart Ride Connect 0" name="workspace-smart-ride-connect-0">46b84cf6812b6610025e38f122d59e52</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

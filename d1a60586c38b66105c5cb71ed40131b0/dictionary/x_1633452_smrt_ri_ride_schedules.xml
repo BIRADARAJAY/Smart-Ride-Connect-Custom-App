@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="ca678dc2c38f66105c5cb71ed4013130" extends="task" label="Ride Schedules" max_length="40" name="x_1633452_smrt_ri_ride_schedules" type="collection">
-        <element label="Instructions For Requestors" max_length="100" name="instructions_for_requestors" type="string"/>
+    <element db_object_id="ca678dc2c38f66105c5cb71ed4013130" extends="task" label="Ride Schedules" max_length="40" name="x_1633452_smrt_ri_ride_schedules" text_index="true" type="collection">
+        <element label="Departing Location" max_length="32" name="departing_location" reference="cmn_location" type="reference"/>
+        <element label="Pickup Point" max_length="100" name="pickup_point" type="string"/>
         <element label="Destination Location" max_length="32" name="destination_location" reference="cmn_location" type="reference"/>
         <element label="Available Seats" max_length="40" name="available_seats" type="integer"/>
-        <element label="Departing Location" max_length="32" name="departing_location" reference="cmn_location" type="reference"/>
+        <element label="Departure Time" max_length="40" name="departure_time" type="glide_date_time"/>
+        <element label="Instructions For Requestors" max_length="100" name="instructions_for_requestors" type="string"/>
         <element choice="1" label="Vehicle Type" max_length="40" name="vehicle_type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="5-Seater Vehicle" sequence="2" value="4"/>
@@ -12,8 +14,6 @@
             </choice>
         </element>
         <element label="Drop Point" max_length="100" name="drop_point" type="string"/>
-        <element label="Pickup Point" max_length="100" name="pickup_point" type="string"/>
-        <element label="Departure Time" max_length="40" name="departure_time" type="glide_date_time"/>
         <element attributes="encode_utf8=false" label="Ride provider" max_length="32" name="ride_provider" reference="sys_user" type="reference"/>
     </element>
 </database>
